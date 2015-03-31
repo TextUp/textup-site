@@ -1,0 +1,132 @@
+/*general*/
+
+body {
+    font-family:"Roboto", Helvetica, Arial;
+    font-size:15px;
+    color:#666666;
+    font-weight:400;
+    letter-spacing:1px;
+}
+p {
+    line-height:20px;
+    font-weight:300;
+}
+h1, h2, h3, h4, h5, h6 {
+    color:#333333;
+    text-transform:uppercase;
+    font-family:"Roboto", Helvetica, Arial;
+    font-weight:700;
+}
+
+/*end general*/
+
+/*header*/
+
+h3.header {
+    text-align:center;
+    padding:25px 10% 5px 10%;
+}
+
+/*end header*/
+
+/*blurb*/
+
+div.blurb {
+    padding:0 5% 0 5%;
+}
+div.blurb-title {
+    border-bottom:5px solid #5cace2;
+    margin-bottom:10px;
+    text-align:center;
+    cursor:pointer;
+    transition:all 0.5s;
+}
+div.blurb-title-collapsed {
+    border-bottom:1px solid LightGray;
+}
+div.blurb-title h4 {
+    margin:0px 0 10px 0;
+}
+div.blurb-text {
+    text-align:left;
+    border-left:1px solid LightGray;
+    padding-left:3%;
+}
+div.blurb-text span {
+    font-weight:500;
+    font-size:16px;
+}
+div.blurb-text ul {
+    list-style: square outside none;
+    margin-left:-25px;
+}
+
+/*end blurb*/
+
+/*header*/
+
+div.header { 
+    margin:5% 0 1% 0; 
+}
+div.header div.logo { 
+    text-align:center; 
+    margin-bottom:10px;
+}
+div.header div.logo img {
+    height:100%;
+    width:150px;
+}
+div.header div.textup-desc {
+    display:none;
+}
+
+/*end header*/
+
+/*description*/
+
+/*end description*/
+
+/*submission*/
+
+div.submission {
+    padding:0 5%;
+}
+div.submission form {
+    margin-top:30px;
+}
+span.form-required {
+    color:red;
+}
+
+/*end submission*/
+
+/*responsive*/
+
+@media(min-width:992px){
+    h3.header { padding-top:0; }
+
+    div.header div.blurb {
+        width:50%;
+        margin:0 auto;
+    }
+
+    div.description {
+        padding:0 3%;
+    }
+    div.description div.blurb {
+        width:33%;
+        float:left;
+        padding:0 1% 0 1%;
+    }
+    div.divider {
+        margin:30px 0 10px 0;
+        border-top:1px solid LightGray;
+    }
+    div.submission {
+        border-bottom:35px solid #5cace2;
+        margin:0 10%;
+        padding:0;
+    }
+}
+
+/*end responsive*/
