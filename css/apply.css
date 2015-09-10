@@ -1,132 +1,340 @@
-/*general*/
-
+/*start general*/
+html { 
+    font-size:17px;
+}
 body {
-    font-family:"Roboto", Helvetica, Arial;
-    font-size:15px;
-    color:#666666;
-    font-weight:400;
-    letter-spacing:1px;
+    margin:0;
+    font-family:sans-serif;
 }
-p {
-    line-height:20px;
-    font-weight:300;
+.splash {
+    font-size:3rem;
 }
-h1, h2, h3, h4, h5, h6 {
-    color:#333333;
-    text-transform:uppercase;
-    font-family:"Roboto", Helvetica, Arial;
+section {
+    font-size:1rem;
+}
+h1 {
+    font-size:3em;
+}
+h2 {
+    font-size:2.5em;
+}
+h3 {
+    font-size:2em;
+}
+h4 {
+    font-size:1.5em;
+}
+.btn {
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 6px 12px;
+    margin-bottom: 0;
     font-weight:700;
+    text-transform:uppercase;
+    font-size:1rem;
 }
-
 /*end general*/
 
-/*header*/
+/*start navbar*/
+nav {
+    width:100%;
+    position:relative;
+}
+nav > span {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+nav > span.left {
+    left:5px;
+}
+nav > span.right {
+    right:5px;
+}
+nav > span.left img {
+    height:3em;
+}
+nav > span.left span.logo > span {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:1.3em;
+    color:rgb(96,97,98);
+}
+nav > span.left span.logo > * {
+    vertical-align: middle;
+}
+nav > span.left span.message {
+    margin-left:1em;
+}
+nav > span.right > span {
+    line-height: 4rem;
+    margin:0 1em;
+    font-weight:700;
+    text-transform:uppercase;
+    color:rgb(96,97,98);
+}
+nav > span.right > span > a {
+    text-decoration: none;
+    color:LightGray;
+}
+nav > span.right > span > a:hover {
+    color:rgb(27,165,224);
+}
+nav > span.right > span.apply > a {
+    background-color:rgb(27,165,224);
+    color:white;
+}
+/*end navbar*/
 
-h3.header {
+/*start calc solution for sticky footer problem*/
+nav {
+    height:4em;
+}
+main {
+    min-height:calc(100vh - 8em);
+    box-sizing:border-box;
+}
+footer {
+    height:4em;
+}
+/*end calc solution for sticky footer problem*/
+
+/*start footer*/
+footer {
+    background:LightGray;
+    position:relative;
+    height:4em;
+}
+footer > span {
+    top:50%;
+    transform:translateY(-50%);
+}
+footer > span.left > span {
+    position:relative;
+    padding-left:1em;
+}
+footer > span.left > span:after {
+    position:absolute;
+    content:"\00a9";
+    left:0;
+}
+footer > span.left {
+    position:absolute;
+    left:1em;
+}
+footer > span.right {
+    position:absolute;
+    right:1em;
+}
+/*end footer*/
+
+/*start centering content on screens*/
+#about-description > article, #about-partners, #openings-intro > p, #openings-desc  {
+    width:70%;
+    margin:0 auto;
+}
+#openings-desc {
+    width:80%;
+    margin:auto;
+}
+/*end centering content on screens*/
+
+/*start description*/
+#about-description > header {
+    height:85vh;
     text-align:center;
-    padding:25px 10% 5px 10%;
+    padding-top:5vh;
+    box-sizing:border-box;
+    color:white;
+    background:rgb(27,165,224);
+    background-image: linear-gradient(transparent 65%, rgba(0,0,0,0.5) 35%);
 }
-
-/*end header*/
-
-/*blurb*/
-
-div.blurb {
-    padding:0 5% 0 5%;
+#about-description > header img {
+    height:70%;
 }
-div.blurb-title {
-    border-bottom:5px solid #5cace2;
-    margin-bottom:10px;
+#about-description > article {
+    margin-top:3em;
+    margin-bottom:3em;
+}
+#about-description > article > div {
+    width:100%;
     text-align:center;
-    cursor:pointer;
-    transition:all 0.5s;
 }
-div.blurb-title-collapsed {
-    border-bottom:1px solid LightGray;
+#about-description > article > div > span {
+    display:inline-block;
+    vertical-align:top;
+    width:30%;
+    text-align:center;
 }
-div.blurb-title h4 {
-    margin:0px 0 10px 0;
+#about-description > article > div > span > i {
+    display: block;
+    background: rgb(27,165,224);
+    border-radius: 100%;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    margin: 1em auto;
+    color: white;
+    font-weight: 700;
 }
-div.blurb-text {
-    text-align:left;
-    border-left:1px solid LightGray;
-    padding-left:3%;
-}
-div.blurb-text span {
-    font-weight:500;
-    font-size:16px;
-}
-div.blurb-text ul {
-    list-style: square outside none;
-    margin-left:-25px;
-}
-
-/*end blurb*/
-
-/*header*/
-
-div.header { 
-    margin:5% 0 1% 0; 
-}
-div.header div.logo { 
-    text-align:center; 
-    margin-bottom:10px;
-}
-div.header div.logo img {
-    height:100%;
-    width:150px;
-}
-div.header div.textup-desc {
-    display:none;
-}
-
-/*end header*/
-
-/*description*/
-
 /*end description*/
 
-/*submission*/
-
-div.submission {
-    padding:0 5%;
+/*start team*/
+#about-team {
+    width:100%;
+    height:40vh;
+    text-align:center;
+    background:rgb(96,97,98);
 }
-div.submission form {
-    margin-top:30px;
+#about-team article {
+    display:inline-block;
+    width:calc(100%/3);
+    max-width:300px;
+    height:100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow:hidden;
 }
-span.form-required {
-    color:red;
+#about-team .eric {
+    background-image:url(../images/team/eric.jpg);
+}
+#about-team .hanna {
+    background-image:url(../images/team/hanna.jpg);
+}
+#about-team .michelle {
+    background-image:url(../images/team/hanna.jpg);
+}
+#about-team article:not(.overlay):hover {
+    cursor:pointer;
+    opacity:0.8;
+}
+#about-team article div {
+    visibility:hidden;
+}
+#about-team article div {
+    color:white;
+    font-weight:700;
+}
+#about-team article div {
+    background-color:rgba(0,0,0,0.5);
+    padding:1.5em 1em;
+    height:100%;
+}
+#about-team article div > h4 {
+    margin:0;
+}
+#about-team article.overlay div {
+    visibility:visible;
 }
 
-/*end submission*/
+/*end team*/
 
-/*responsive*/
-
-@media(min-width:992px){
-    h3.header { padding-top:0; }
-
-    div.header div.blurb {
-        width:50%;
-        margin:0 auto;
-    }
-
-    div.description {
-        padding:0 3%;
-    }
-    div.description div.blurb {
-        width:33%;
-        float:left;
-        padding:0 1% 0 1%;
-    }
-    div.divider {
-        margin:30px 0 10px 0;
-        border-top:1px solid LightGray;
-    }
-    div.submission {
-        border-bottom:35px solid #5cace2;
-        margin:0 10%;
-        padding:0;
-    }
+/*start partners*/
+#about-partners {
+    text-align:center;
+    margin-top:3em;
+    margin-bottom:3em;
 }
+#about-partners > p {
+    /*margin:0 7em;*/
+}
+#about-partners > article {
+    /*margin:2em 4em;*/
+}
+#about-partners > article > img {
+    height:4em;
+    margin:0.5em;
+}
+/*end partners*/
 
-/*end responsive*/
+/*start openings*/
+#openings-intro {
+    width:100%;
+    background-color:rgb(27,165,224);
+    padding:2em 7em;
+    box-sizing:border-box;
+    color:white;
+}
+.openings-icons {
+    content:" ";
+    height:100px;
+    background-repeat:no-repeat;
+    background-image:url(../images/jobs-icons.png);
+    background-size:cover;
+    position:relative;
+}
+.openings-icons.business-adv {
+    background-position:0 5px;
+    width:76px;
+}
+.openings-icons.frontend-dev {
+    background-position:-106px 5px;
+    width:112px;
+}
+.openings-icons.community-coord {
+    background-position:-238px 5px;
+    width:99px;
+}
+.openings-icons.active:after {
+    position:absolute;
+    bottom:-10px;
+    left:50%;
+    transform:translateX(-50%);
+    content:" ";
+    background:rgb(27,165,224);
+    border-radius:50%;
+    height: 8px;
+    width: 12px;
+}
+#openings-select {
+    background:LightGray;
+    text-align:center;
+    box-sizing:border-box;
+    padding:1em 0;
+}
+#openings-select > div {
+    display:inline-block;
+    margin:0 1em;
+    cursor:pointer;
+}
+#openings-desc {
+    overflow:hidden;
+}
+#openings-desc > article {
+    display:none;
+    transition:all 0.5s;
+    margin:0;
+}
+#openings-desc > article:after {
+    content:" ";
+    display:table;
+    clear:both;
+}
+#openings-desc > article.active {
+    display:block;
+}
+#openings-desc > article > div {
+    width:100%;
+}
+#openings-desc > article > div > div, #openings-desc > article > div > aside {
+    float:left;
+    box-sizing:border-box;
+    padding:0 2em;
+}
+#openings-desc > article > div > div {
+    width:55%;
+}
+#openings-desc > article > div > aside {
+    width:45%;
+    background-color:rgb(27,165,224);
+    color:white;
+}
+#openings-desc > article > div > aside h5 {
+    margin-bottom:0;
+}
+/*end openings*/

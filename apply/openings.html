@@ -1,0 +1,95 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>TextUp Jobs - Openings</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/apply.css">
+</head>
+<body>
+	<nav>
+        <span class="left">
+            <span class="logo"><img src="../images/logo.png" alt="TextUp"> <span>Jobs</span></span>
+            <span class="message">Applications due Thursday, October 1.</span>    
+        </span>
+        <span class="right">
+            <span><a href="/apply/index.html">Who We Are</a></span>
+            <span>Openings</span>
+            <span class="apply"><a class="typeform-share btn" href="https://textup.typeform.com/to/R7K1vJ" data-mode="2" target="_blank">Apply Now</a></span>
+        </span>
+    </nav>
+    <main>
+    	<section id="openings-intro">
+	    	<p>Our team is looking for driven, innovative people <b>wanting hands-on experience</b> in creating real world solutions for the social service field. TextUp is always on the lookout for inventive, cutting-edge developments and by nature we require all team members to be <b>adaptive, creative, and collaborative</b>. We have openings for a Frontend Developer, Business Advisor, and Community Engagement Coordinator.</p>
+	    </section>
+	    <section id="openings-select">
+	    	<div class="openings-icons frontend-dev active" data-target="frontend-desc"></div>
+	    	<div class="openings-icons business-adv" data-target="business-desc"></div>
+	    	<div class="openings-icons community-coord" data-target="community-desc"></div>
+	    </section>
+		<section id="openings-desc">
+		    <article id="frontend-desc" class="active">
+		    	<div>
+		    		<div>
+		    			<h4>Frontend Developer</h4>
+		    			<p>TextUp is developing working versions of the interactive wireframes we’ve developed through consultation with our service provider partners and clients of these agencies. TextUp’s app is a Javascript frontend communicating via a RESTful API with a Java backend. TextUp is looking for an responsible, skilled, and creative frontend programmer to join our programming team to contribute to the design and development of our frontend web application.</p>
+		    		</div>
+					<aside>
+						<h5>Commitment</h5>
+						<p>Approx 11 hours (2 hours team meetings and development check-ins, 9 hours on programming tasks)</p>
+						<h5>Qualifications</h5>
+						<p>Applicants must be proficient with Javascript, HTML and CSS and either willing to learn Ember, the Javascript MVC framework we use, or can suggest an alternative. Preference to those with prior experience working on production applications used by an established user base.</p>
+					</aside> 
+		    	</div>
+		    </article>
+		    <article id="business-desc">
+		    	<div>
+			    	<div>
+			    		<h4>Business Advisor</h4>
+		    			<p>TextUp is wrapping up pilot testing of our initial program designs- testing that has proven both their effectiveness and value for the community.   We now look ahead to affirming their financial viability.  TextUp is looking for a business-minded thinker to navigate us through pricing and marketing our programs as well as advise our team on ways to ensure the financial stability and longevity of our venture and, by extension, the positive impact we can have on communities.</p>
+			    	</div>
+					<aside>
+						<h5>Commitment</h5>
+						<p>Approx 6 hours (2 hours developing and implementing business strategies, 2 hours visiting service provider sites to conduct interviews and meet with clients, 2 hours in team meetings)</p>
+						<h5>Qualifications</h5>
+						<p>Applicants must be confident pitching ideas to a variety of audiences and be able to professionally and warmly communicate over email, phone, and in-person.  This position also requires traveling to service providers, generally homeless shelters, alone to interview clients- applicants must feel comfortable making these trips regularly.  Preference to upperclass undergraduate or graduate business students who have prior experience developing business strategies for cutting edge ideas</p>
+					</aside>
+		    	</div>
+		    </article>
+		    <article id="community-desc">
+		    	<div>
+		    		<div>
+		    			<h4>Community Engagement Coordinator</h4>
+		    			<p>TextUp is grounded in its understanding of the everyday experiences of both service providers and the homeless population.  We are constantly deepening this understanding through interviews and candid conversations with those we impact.  The role of Community Engagement Coordinator involves both developing new, healthy relationships and maintaining existing relationships with clients.  TextUp is looking for a second Community Engagement Coordinator so we can develop even more close relationships with the key players in our community.</p>
+		    		</div>
+					<aside>
+						<h5>Commitment</h5>
+						<p>Approx 7 hours (1 hour seeking new community partners, 2.5 hours visiting service provider sites to conduct interviews and meet with clients, 1.5 hours following up with clients over the phone and email, 2 hours in team meetings)</p>
+						<h5>Qualifications</h5>
+						<p>Applicants must be confident pitching ideas to a variety of audiences and be able to professionally and warmly communicate over email, phone, and in-person.  This position also requires traveling to service providers, generally homeless shelters, alone to interview clients- applicants must feel comfortable making these trips regularly.  Preference to students with prior experience collaborating with individuals from a variety of backgrounds to meet a common goal</p>
+					</aside>
+		    	</div>
+			</article>
+		</section>
+    </main>
+	<footer>
+        <span class="left"><span>2015 TextUp</span></span>
+        <span class="right">Get in touch at <b>connect@textup.org</b></span>
+    </footer>
+
+	<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/prefixfree.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#openings-select div").on("click", function() {
+                var obj = $(this);
+                obj.parent().children("div").removeClass("active");
+                $("#openings-desc > article").removeClass("active");
+                obj.addClass("active");
+                $("#" + obj.attr("data-target")).addClass("active");
+            });
+        });
+    </script>
+</body>
+</html>
