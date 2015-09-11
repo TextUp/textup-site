@@ -1,21 +1,27 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
-	<title>TextUp Jobs - Openings</title>
+	<title>TextUp - Openings</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../css/apply.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
-	<nav>
-        <span class="left">
-            <span class="logo"><img src="../images/logo.png" alt="TextUp"> <span>Jobs</span></span>
-            <span class="message">Applications due Thursday, October 1.</span>    
+    <nav>
+        <span class="nav-header">
+            <a href="/" class="logo"></a>
+            <span class="message">We're hiring! Applications due Thursday, October 1.</span>    
         </span>
-        <span class="right">
-            <span><a href="/apply/index.html">Who We Are</a></span>
+        <button class="nav-toggle">
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        </button>
+        <span class="nav-items">
+            <span><a href="/">Who We Are</a></span>
             <span>Openings</span>
-            <span class="apply"><a class="typeform-share btn" href="https://textup.typeform.com/to/R7K1vJ" data-mode="2" target="_blank">Apply Now</a></span>
+            <span><a class="typeform-share btn btn-blue" href="https://textup.typeform.com/to/R7K1vJ" data-mode="2" target="_blank">Apply Now</a></span>
+            <span><a href="https://app.textup.org" target="_blank" class="btn btn-green">Launch</a></span>
         </span>
     </nav>
     <main>
@@ -80,16 +86,6 @@
 	<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/prefixfree.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#openings-select div").on("click", function() {
-                var obj = $(this);
-                obj.parent().children("div").removeClass("active");
-                $("#openings-desc > article").removeClass("active");
-                obj.addClass("active");
-                $("#" + obj.attr("data-target")).addClass("active");
-            });
-        });
-    </script>
+    <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

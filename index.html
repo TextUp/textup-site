@@ -1,411 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>TextUp</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,600" >
-	<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>TextUp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-
 <body>
-	<div class="jumbotron">
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".textup-nav">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">TextUp</a>
-			</div>
+    <nav>
+        <span class="nav-header">
+            <a href="/" class="logo"></a>
+            <span class="message">We're hiring! Applications due Thursday, October 1.</span>    
+        </span>
+        <button class="nav-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <span class="nav-items">
+            <span>Who We Are</span>
+            <span><a href="/openings">Openings</a></span>
+            <span><a class="typeform-share btn btn-blue" href="https://textup.typeform.com/to/R7K1vJ" data-mode="2" target="_blank">Apply Now</a></span>
+            <span><a href="https://app.textup.org" target="_blank" class="btn btn-green">Launch</a></span>
+        </span>
+    </nav>
+    <main>
+        <section id="about-description">
+            <header>
+                <img src="../images/computer-demo.gif" alt="Animated web-app">
+                <img src="../images/phone-demo.gif" alt="Animated texting">
+                <h2>We are TextUp.</h2>
+            </header>
+            <article>
+                <p><b>From over-200 interviews</b> with staff, directors, and clients of social service agencies, we know that lack of information leads to frustration, wasted resources, and missed opportunities to help people help themselves leave homelessness. Yet in metropolitan areas across the US, <b>50 to 70% of people who are homeless have working mobile phones</b>. Up to <b>90% of those phones have unlimited texting</b>. TextUp is a text messaging service that increases staff-client engagement and tracks effectiveness of communication with clients, among staff, and with other social service providers.</p>
+                <div>
+                    <span>
+                        <i>1</i>
+                        <span>Empowering people who are homeless with the most accurate, up-to-date information on local services</span>
+                    </span>
+                    <span>
+                        <i>2</i>
+                        <span>Creating two-way, real-time channels for communication between service providers and the homeless</span>
+                    </span>
+                    <span>
+                        <i>3</i>
+                        <span>Streamlining the administrative work of social service providers so more time can be spent on supporting those in need</span>
+                    </span>
+                </div>
+            </article>
+        </section>
+        <section id="about-team">
+            <article class="eric">
+                <div>
+                	<span>x</span>
+                    <h4>Eric Bai</h4>
+                    <p>Eric studies Computational Biology at Brown. Eric has worked with the homeless community in many capacities: in soup kitchens, in shelters, and as an outreach worker. He has experience in full-stack development, prototyping and interviewing.</p>
+                </div>
+            </article
+            ><article class="hanna">
+                <div>
+                	<span>x</span>
+                    <h4>Hanna Oh</h4>
+                    <p>Hanna studied Industrial Design at RISD.She is passionate about designing systems and services that improve the quality of life for individuals. Hanna wants TextUp to change pre-existing system that is not working well for users.</p>
+                </div>
+            </article
+            ><article class="michelle">
+                <div>
+                	<span>x</span>
+                    <h4>Michelle Petersen</h4>
+                    <p>Michelle has a lot to say here!</p>
+                </div>
+            </article>
+            
+        </section>
+        <section id="about-partners">
+            <p>We are privileged to work with incredible partners in <b>Cambridge, Providence, and Rhode Island as a whole</b>. Their support, advice, and feedback help make TextUp happen.</p>
+            <article>
+                <img src="../images/partners/brown-horizontal.gif" alt="Brown University">
+                <img src="../images/partners/swearer.png" alt="Swearer Center">
+                <img src="../images/partners/risd.gif" alt="RISD">
+                <img src="../images/partners/venturewell.png" alt="VentureWell">
+                <img src="../images/partners/uwri.jpg" alt="United Way of Rhode Island">
+                <img src="../images/partners/rich.jpg" alt="Rhode Island Coalition for the Homeless">
+                <img src="../images/partners/hohcdc.png" alt="House of Hope CDC">
+                <img src="../images/partners/amos.png" alt="Amos House">
+                <img src="../images/partners/y2y.jpg" alt="Y2Y Harvard Square">
+                <img src="../images/partners/rhody.jpg" alt="Rhody Food On The Move">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <span class="left"><span>2015 TextUp</span></span>
+        <span class="right">Get in touch at <b>connect@textup.org</b></span>
+    </footer>
 
-			<div class="collapse navbar-collapse textup-nav">
-				<ul class="nav navbar-nav">
-					<li><a href="#about">About</a></li>
-					<li><a href="#people">People</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="#how-to-help">Connect with us</a></li>
-				</ul>
-			</div>
-		</nav>
-
-		<div class="jumbotron-desc-container">
-			<div class="jumbotron-desc">
-				<h1>Building relationships to close the <span>social service information gap</span></h1>
-				<h3>Accurate, always-updated information connecting the homeless with social services</h3>
-			</div>
-		</div>
-		<a  href="#about" class="jumbotron-skip"></a>
-	</div><!-- end jumbotron -->
-
-	<div id="about" class="background">
-		<span class="background-svg-top">&nbsp;</span>
-		<p>TextUp combines <span>a web app and an automated texting hotline</span> to increase transparency and improve access to social services for the homeless and near-homeless. We will <span>reduce the uncertainty surrounding the basic needs</span> of shelter, food and health for our poorest neighbors so that they can start to think about pathways to financial and emotional stability. With at least <span>50,000 social service clients with text-enabled cell phones</span> in Rhode Island alone, TextUp allows social service agencies to reimagine the possibilities inherent in provider-client relationships.</p>
-		<span class="background-svg-bottom">&nbsp;</span>
-	</div><!-- end background -->
-
-	<div class="sell">
-		<div class="container">
-			<div class="row">
-				<div class="sell-convo">
-					<div class="col-md-6">
-						<span class="icon icon-convo testing"><img src="images/textupicon1.png"></span>
-						<h4>Start a conversation.</h4>
-						<p>Dynamic, two-way communication between staff members using our web app and clients using our text-messaging.</p>
-					</div>
-				</div><!-- end sell-convo -->
-				<div class="sell-record">
-					<div class="col-md-6">
-						<span class="icon icon-record testing"><img src="images/textupicon1.png"></span>
-						<h4>Set the record straight.</h4>
-						<p>Easily update information about when your service is open, where you are located, and what amenities you are offering directly through our web app. For unforseen events, send out an alert to all of your subscribers.</p>
-					</div>
-				</div><!-- end sell-record -->
-			</div><!-- end row -->
-			<div class="row">
-				<div class="sell-priv">
-					<div class="col-md-6">
-						<span class="icon icon-priv testing"><img src="images/textupicon1.png"></span>
-						<h4>Protect your privacy.</h4>
-						<p>Communicate using a unique TextUp phone number to enjoy all of the flexibility of texting without needing to use your personal phone number.</p>
-					</div>
-				</div><!-- end sell-priv -->
-				<div class="sell-usage">
-					<div class="col-md-6">
-						<span class="icon icon-usage testing"><img src="images/textupicon1.png"></span>
-						<h4>Discover usage patterns.</h4>
-						<p>Visualize interactions with all of your clients based on time, content or location to understand how your service is being used.</p>
-					</div>
-				</div><!-- end sell-usage -->
-			</div><!-- end row -->
-		</div><!-- end container -->
-	</div><!-- end sell -->
-
-	<div class="texting-preview">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-7">
-					<div class="heading"><h1>Intelligent texting</h1></div>
-					<p>By aggregating information on a <span>consolidated platform</span>, TextUp enables providers (e.g., shelters and meal sites) to report and adjust service availabilities and <span>send text alerts</span> with important information. TextUp allows client to access this data in <span>real time</span> for informed decision-making.</p>
-				</div>
-				<div class="col-md-5">
-					<span class="texting-preview-svg">&nbsp;</span>
-				</div>
-			</div>
-		</div>
-	</div><!-- end texting-preview -->
-
-	<div class="promo">
-		<div class="container">
-			<div class="row text-center">
-				<a class="play" href="#"></a>
-			</div>
-		</div>
-	</div><!-- end promo -->
-
-	<div id="people" class="team clearfix">
-		<div id="textup-team" class="carousel slide" data-ride="carousel" data-interval="false">
-			<div class="carousel-pics visible-lg-block">
-				<ol class="carousel-indicators">
-					<li data-target="#textup-team" data-slide-to="0" class="team-all active">
-						<img src="images/team/all.jpg" alt="pic">
-					</li
-					><li data-target="#textup-team" data-slide-to="1">
-						<img src="images/team/eric.jpg" alt="pic">
-					</li
-					><li data-target="#textup-team" data-slide-to="2">
-						<img src="images/team/jana.jpg" alt="pic">
-					</li
-					><li data-target="#textup-team" data-slide-to="3">
-						<img src="images/team/hanna.jpg" alt="pic">
-					</li
-					><li data-target="#textup-team" data-slide-to="4">
-						<img src="images/team/isabelle.jpg" alt="pic">
-					</li
-					><li data-target="#textup-team" data-slide-to="5">
-						<img src="images/team/julia.jpg" alt="pic">
-					</li
-					><li data-target="#textup-team" data-slide-to="6">
-						<img src="images/team/christian.jpg" alt="pic">
-					</li>
-				</ol>
-			</div>
-
-			<div class="team-desc">
-				<div class="heading"><h1>Team</h1></div>
-				<div class="carousel-inner">
-					<div class="item active">
-						<img class="team-pic hidden-lg" src="images/team/all-square.jpg" alt="pic">
-						<h4>Who we are</h4>
-						<p>We are a <span>diverse</span> team of computer scientists, community organizers, social scientists, public health coordinators, and designers. We believe in using technology to <span>improve access to social services for the homeless and near-homeless</span> in Rhode Island.</p>
-					</div>
-					<div class="item">
-						<img class="team-pic hidden-lg" src="images/team/eric.jpg" alt="pic">
-						<h4>Eric Bai</h4>
-						<h5 class="role">Technology Lead</h5>
-						<p>Eric is a senior studying Computational Biology at Brown. Eric has worked with the homeless community in many capacities: in soup kitchens, in shelters, and as an outreach worker. He is interested in <span>solving real-world, public-sector problems through technology</span>. He brings extensive experience with web application frameworks and frontend and backend tools and design.</p>
-					</div>
-					<div class="item">
-						<img class="team-pic hidden-lg" src="images/team/jana.jpg" alt="pic">
-						<h4>Jana Foxe</h4>
-						<h5 class="role">Community Engagement Lead</h5>
-						<p>Jana has over two years of experience in working and organizing with the homeless community in RI, experience she has gained through her role as a Coordinator of Housing Opportunities for People Everywhere (HOPE), part of the Swearer Center at Brown. She is very excited to be <span>building relationships with community partners and service providers across the state</span>, and to be actively working to connect the homeless to services through TextUp.</p>
-					</div>
-					<div class="item">
-						<img class="team-pic hidden-lg" src="images/team/hanna.jpg" alt="pic">
-						<h4>Hanna Oh</h4>
-						<h5 class="role">Creative Lead</h5>
-						<p>Hanna is a senior at the Rhode Island School of Design studying Industrial Design. She is passionate about <span>designing systems and services that improve the quality of life for individuals</span>. Hanna believes that TextUp is doing a beautiful job of changing a pre-existing system that is not working well for users.</p>
-					</div>
-					<div class="item">
-						<img class="team-pic hidden-lg" src="images/team/isabelle.jpg" alt="pic">
-						<h4>Isabelle Yisak</h4>
-						<h5 class="role">Creative Co-Lead</h5>
-						<p>Isabelle is a senior studying Architectural Studies and Anthropology at Brown University.  A thinker and a tinkerer, she is a firm believer of inclusive cities and public interest design.  Isabelle is ready to flex her creative muscles and translate the experiences of the Rhode Island homeless community into a visual communications strategy for TextUp.</p>
-					</div>
-					<div class="item">
-						<img class="team-pic hidden-lg" src="images/team/julia.jpg" alt="pic">
-						<h4>Julia Harvey</h4>
-						<h5 class="role">Strategy &amp; Opportunities Co-Lead</h5>
-						<p>Julia received her BA in Community Health from Brown University and is currently a Program Coordinator at the Rhode Island Public Health Institute. Julia is experienced in community-level interventions and collaborations, as well as statistical analysis and program development and evaluation. She is passionate about <span>providing opportunities to underserved populations</span> and, therefore, is excited to be improving the existing service infrastructure in Rhode Island as a member of the TextUp team.</p>
-					</div>
-					<div class="item">
-						<img class="team-pic hidden-lg" src="images/team/christian.jpg" alt="pic">
-						<h4>Christian Petroske</h4>
-						<h5 class="role">Strategy &amp; Opportunities Co-Lead</h5>
-						<p>Coming soon.</p>
-					</div>
-				</div><!-- carousel-inner -->
-			</div><!-- team-desc -->
-
-			<!-- Controls -->
-			<a class="left carousel-control hidden-lg" href="#textup-team" role="button" data-slide="prev">Prev</a>
-			<a class="right carousel-control hidden-lg" href="#textup-team" role="button" data-slide="next">Next</a>
-		</div><!-- end carousel -->
-	</div><!-- end team -->
-
-	<div class="support clearfix">
-		<div class="heading"><h1>Mentors</h1></div>
-		<div id="textup-support" class="carousel slide" data-ride="carousel">
-			<!-- Wrapper for slides -->
-			<div class="support-desc">
-				<div class="carousel-inner">
-					<div class="item active">
-						<blockquote>We see great potential in TextUp as a way to democratize information about service availability and help sustain relationships between staff members and constituents -- both resulting in improved outcomes for those we serve.</blockquote>
-						<div class="cite">
-							<div class="cite-attrib">
-								<h4>Jean Johnson</h4>
-								<h5><span>Executive Director</span><br/>House of Hope CDC</h5>
-							</div>
-							<img class="cite-pic hidden-xs hidden-lg" src="images/support/jeanjohnson.jpg" alt="pic">
-						</div>
-					</div>
-					<div class="item">
-						<blockquote>This ease and durability of connections that can be maintained over text promises more stable relationships between case managers and clients, allowing for the continuity of care that is not possible with the current face-to-face-only system.</blockquote>
-						<div class="cite">
-							<div class="cite-attrib">
-								<h4>Irene Glasser</h4>
-								<h5><span>Adjunct Lecturer in Anthropology</span><br/>Brown University</h5>
-								<h5><span>Co-Evaluator</span><br/>Riverwood Mental Health Housing First</h5>
-							</div>
-							<img class="cite-pic hidden-xs hidden-lg" src="images/support/ireneglasser.jpg" alt="pic">
-						</div>
-					</div>
-					<div class="item">
-						<blockquote>[TextUp has] developed strong relationships in the Providence and Rhode Island homeless communities, including with the Rhode Island Coalition for the Homeless and the Rhode Island Homeless Advocacy Project...[I] believe that TextUp has the potential to make a significant difference in the lives of homeless people as well as the organizations that serve them.</blockquote>
-						<div class="cite">
-							<div class="cite-attrib">
-								<h4>Alan Harlam</h4>
-								<h5><span>Director of Innovation &amp; Social Entrepreneurship</span><br/>Swearer Center</h5>
-							</div>
-							<img class="cite-pic hidden-xs hidden-lg" src="images/support/alanharlam.jpg" alt="pic">
-						</div>
-					</div>
-					<div class="item">
-						<blockquote>How to communicate to these people is a challenge...what you have created is an extremely innovative way, one of the best ways to communicate with these people [the homeless].</blockquote>
-						<div class="cite">
-							<div class="cite-attrib">
-								<h4>Alan Flam</h4>
-								<h5><span>Board Member</span><br/>RI Coalition for the Homeless</h5>
-								<h5><span>Director of Advising &amp; Community Collaborations</span><br/>Swearer Center</h5>
-							</div>
-							<img class="cite-pic hidden-xs hidden-lg" src="images/support/alanflam.jpg" alt="pic">
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="carousel-pics visible-lg-block">
-				<ol class="carousel-indicators">
-					<li data-target="#textup-support" data-slide-to="0" class="active">
-						<img src="images/support/jeanjohnson.jpg" alt="pic">
-					</li>
-					<li data-target="#textup-support" data-slide-to="1">
-						<img src="images/support/ireneglasser.jpg" alt="pic">
-					</li>
-					<li data-target="#textup-support" data-slide-to="2">
-						<img src="images/support/alanharlam.jpg" alt="pic">
-					</li>
-					<li data-target="#textup-support" data-slide-to="3">
-						<img src="images/support/alanflam.jpg" alt="pic">
-					</li>
-				</ol>
-			</div>
-
-			<!-- Controls -->
-			<a class="left carousel-control hidden-lg" href="#textup-support" role="button" data-slide="prev">Prev</a>
-			<a class="right carousel-control hidden-lg" href="#textup-support" role="button" data-slide="next">Next</a>
-		</div><!-- end carousel -->
-	</div><!-- end support -->
-
-	<div id="news" class="news">
-		<div class="heading"><h1>In the news</h1></div>
-		<div id="textup-news" class="carousel slide" data-ride="carousel" data-interval="false">
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<div class="news-icons">
-						<img src="images/partners/brown-icon.jpg" alt="logo">
-						<img src="images/partners/swearer-icon.png" alt="logo">
-					</div>
-					<div class="news-story">
-						<h3>Social Innovation Fellows<br/><small>January 2014</small></h3>
-						<p><span>Amanda Chew</span> and <span>Eric Bai</span> selected as Social Innovation Fellows in the 2014 cohort. The Social Innovation Initiative is supported by the <span>Swearer Center at Brown University</span> and seeks to combine <span>intensive skills training with venture-focused coursework</span> in a year-long immersive experience.</p>
-						<div class="news-read-more"><a class="btn btn-default" href="http://www.brown.edu/academics/college/special-programs/public-service/social-innovation-initiative/social-innovation-fellowship" target="_blank">Read More</a></div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="news-icons">
-						<img src="images/partners/swearer-icon.png" alt="logo">
-						<img src="images/partners/sii.jpg" alt="logo">
-					</div>
-					<div class="news-story">
-						<h3>Changemaker of the Week<br/><small>September 2014</small></h3>
-						<p>TextUp was featured as the Changemaker of the Week on <span>Swearer Sparks</span>, Brown University's online storytelling platform for social change. Eric Bai details the <span>core belief</span> fueling TextUp, that one <span>must satisfy basic needs before</span> thinking about pathways out of homelessness.</p>
-						<div class="news-read-more"><a class="btn btn-default" href="http://www.swearersparks.org/stories/changemaker-week-eric-bai-155" target="_blank">Read More</a></div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#textup-news" data-slide-to="0" class="active"></li>
-				<li data-target="#textup-news" data-slide-to="1"></li>
-			</ol>
-
-			<!-- Controls -->
-			<a class="left carousel-control" href="#textup-news" role="button" data-slide="prev">Prev</a>
-			<a class="right carousel-control" href="#textup-news" role="button" data-slide="next">Next</a>
-		</div>
-	</div><!-- end partners -->
-
-
-	<div class="partners">
-		<div class="container">
-			<div class="row">
-				<div class="partner">
-					<!-- <img src="images/partners/brown.png" alt="logo"> -->
-					<a href="http://www.brown.edu/" target="_blank"><img src="images/partners/brown.jpg" alt="logo"></a>
-				</div
-				><div class="partner">
-					<!-- <img src="images/partners/swearer.png" alt="logo"> -->
-					<a href="http://www.brown.edu/academics/college/special-programs/public-service/" target="_blank"><img id="partner-swearer" src="images/partners/swearer.png" alt="logo"></a>
-				</div
-				><div class="partner">
-					<!-- <img src="images/partners/risd.png" alt="logo"> -->
-					<a href="http://www.risd.edu/" target="_blank"><img src="images/partners/risd.gif" alt="logo"></a>
-				</div
-				><div class="partner">
-					<a href="http://www.thehouseofhopecdc.org/" target="_blank"><img id="partner-hohcdc" src="images/partners/hohcdc.png" alt="logo"></a>
-				</div>
-			</div>
-		</div>
-	</div><!-- end partners -->
-
-	<div id="how-to-help" class="call-to-action clearfix">
-		<div class="action">
-			<span class="heading"><h1>Join our network</h1></span>
-			<p>Get in touch if your organization would like to be a part of our pilot rolllout.</p>
-			<div class="text-center">
-				<a class="btn btn-default" href="mailto:connect@textup.co?subject=%5BJoin%5D%20Joining%20TextUp&body=Hi%20TextUp%2C" target="_blank">Get in touch</a>
-			</div>
-		</div>
-		<div class="action">
-			<span class="heading"><h1>Newsletter</h1></span>
-			<p>Keep in touch with all of our milestones and findings.</p>
-			<form action="//textup.us9.list-manage.com/subscribe/post?u=071b7764b04e1ed0b166e4871&amp;id=2db31efb41" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<div class="input-group text-center">
-					<input type="email" value="" name="EMAIL" class="form-control" placeholder="Your email" required>
-				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_071b7764b04e1ed0b166e4871_2db31efb41" tabindex="-1" value=""></div>
-				    <span class="input-group-btn">
-				    <input type="submit" value="Keep in touch" name="subscribe" class="btn btn-default">
-				    </span>
-			    </div><!-- /input-group -->
-			</form>
-		</div>
-	</div><!-- end call-to-action -->
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="copyright text-center">
-						<small>&copy; 2014 TextUp. All Rights Reserved.</small>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="footer-icons text-center">
-						<a href="#"><span class="icon icon-email">&nbsp;</span></a>
-						<a href="#"><span class="icon icon-github">&nbsp;</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer><!-- end footer -->
-
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
-	<script type="text/javascript" src="js/jquery.ba-throttle-debounce.min.js"></script>
-	<script type="text/javascript" src="js/prefixfree.min.js"></script>
-	<script type="text/javascript">
-		function resizeSplash() {
-			var vHeight = $(window).height(),
-				sHeight = vHeight - (0.03 * vHeight);
-			$(".jumbotron").css("height", sHeight)
-		}
-		$(window).on("resize", $.throttle(250, resizeSplash));
-		resizeSplash();
-
-		$(document).ready(function() {
-			$(window).on("scroll", $.throttle(250, function() {
-				var yDist = $(this).scrollTop(),
-					nav = $(".navbar-default"),
-					backgroundAt = nav.height(), 
-					shrinkAt = $(window).height() - (nav.height() * 2);
-
-				if (yDist > shrinkAt) { nav.addClass("smaller"); }
-				else { nav.removeClass("smaller"); }
-
-				if (yDist > backgroundAt) { nav.addClass("nav-background") }
-				else { nav.removeClass("nav-background") }
-			}));
-
-			var swipeHandlers = function(carouselId) {
-				return {
-					swipeLeft:function() { $(carouselId).carousel("next"); },
-					swipeRight: function() { $(carouselId).carousel("prev"); }
-				};
-			};
-			$("#textup-team .carousel-inner").swipe( swipeHandlers("#textup-team") );
-			$("#textup-support .carousel-inner").swipe( swipeHandlers("#textup-support") );
-			$("#textup-news .carousel-inner").swipe( swipeHandlers("#textup-news") );
-		});
-	</script>
+    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/prefixfree.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
