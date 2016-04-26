@@ -12,4 +12,8 @@ $(document).ready(function() {
         obj.addClass("active");
         $("#" + obj.attr("data-target")).addClass("active");
     });
+    $("#about-description > header > h3 > span").typed({
+        strings: ["TextUp.", "designers.", "innovators.", "problem solvers.", "listeners.", "TextUp."],
+        backDelay: 1000
+    });
 });
