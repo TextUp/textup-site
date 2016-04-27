@@ -1,0 +1,90 @@
+.hidden {
+    display: none !important;
+}
+.clickable {
+    cursor: pointer;
+}
+.no-select {
+    cursor: default;
+    user-select: none;
+
+    &.clickable {
+        cursor: pointer;
+    }
+}
+.no-space {
+    margin: 0;
+    padding: 0;
+}
+.margin-center {
+    float: none !important;
+    margin: 0 auto;
+}
+.halo {
+    border-radius: 100%;
+    display: inline-block;
+    padding: (0.5 * $padding) (1 * $padding);
+}
+@include spacing-tweaks(margin, 'margin');
+@include spacing-tweaks(padding, 'pad');
+@each $direction, $abbr in $directions-with-abbr {
+    .border-#{$abbr} {
+        border-#{$direction}: 1px solid $border-color;
+    }
+}
+.bg-color {
+    background-color: $bg-color;
+
+    &.bg-brand {
+        background-color: $brand-color;
+        color: contrast-color($brand-color);
+    }
+    &.bg-dark {
+        background-color: shade($bg-color);
+    }
+    &.bg-darkest {
+        background-color: $bg-dark-color;
+    }
+    &.bg-light {
+        background-color: $bg-light-color;
+    }
+    &.bg-lightest {
+        background-color: $bg-lightest-color;
+    }
+}
+.reset-list {
+    @extend %vertical-scroll;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+// Centering
+// ---------
+
+.v-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.v-center-right {
+    @extend .v-center;
+    right: 0;
+}
+.v-center-left {
+    @extend .v-center;
+    left: 0;
+}
+.pull-right {
+    @include v-center(right, 3%);
+    @extend .text-right;
+}
+.pull-left {
+    @include v-center(left, 3%);
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

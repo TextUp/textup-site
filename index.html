@@ -4,100 +4,218 @@
     <title>TextUp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-    <nav>
-        <span class="nav-header">
-            <a href="/" class="logo"></a>
-            <span class="message">Rolling apps close Thursday, September 24.</span>
+    <nav class='row'>
+        <span class="pull-left">
+            <a href="/">
+                <div class="sprite logo-sprite"></div>
+            </a>
         </span>
-        <button class="nav-toggle">
+        <button class="nav-toggle pull-right btn btn-plain">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <span class="nav-items">
-            <span>Who We Are</span>
-            <span><a href="/openings">Openings</a></span>
-            <span><a class="typeform-share btn btn-blue" href="https://textup.typeform.com/to/R7K1vJ" data-mode="2" target="_blank">Apply Now</a></span>
-            <span><a href="https://app.textup.org" target="_blank" class="btn btn-green">Launch</a></span>
-        </span>
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="#about-description">About TextUp</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about-benefits">Why TextUp</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about-team">Team</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about-partners">Partners</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://dev.textup.org" target="_blank">API</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://app.textup.org" target="_blank" class="btn">Launch v1</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://staging.textup.org" target="_blank" class="btn btn-default">Launch v2 beta</a>
+            </li>
+        </ul>
     </nav>
     <main>
+        <header id='about-overview' class='bg-color bg-brand'>
+            <div class="pad-all-double animated-container">
+                <img class="animated-item" src="../images/computer-demo.gif" alt="Animated web-app">
+                <img class="animated-item" src="../images/phone-demo.gif" alt="Animated texting">
+            </div>
+            <div class="text-center pad-all-double">
+                <h1 class='text-lighten pad-b text-no-transform'>We are <span id='type-animate'></span></h1>
+            </div>
+        </header>
         <section id="about-description">
-            <header>
-                <img src="../images/computer-demo.gif" alt="Animated web-app">
-                <img src="../images/phone-demo.gif" alt="Animated texting">
-                <h3>We are <span></span></h3>
-            </header>
-            <article>
-                <p><b>From over-200 interviews</b> with staff, directors, and clients of social service agencies, we know that lack of information leads to frustration, wasted resources, and missed opportunities to help people help themselves leave homelessness. Yet in metropolitan areas across the US, <b>50 to 70% of people who are homeless have working mobile phones</b>. Up to <b>90% of those phones have unlimited texting</b>. TextUp is a text messaging service that increases staff-client engagement and tracks effectiveness of communication with clients, among staff, and with other social service providers.</p>
-                <div>
-                    <span>
-                        <i>1</i>
-                        <span>Empowering people who are homeless with the most accurate, up-to-date information on local services</span>
-                    </span>
-                    <span>
-                        <i>2</i>
-                        <span>Creating two-way, real-time channels for communication between service providers and the homeless</span>
-                    </span>
-                    <span>
-                        <i>3</i>
-                        <span>Streamlining the administrative work of social service providers so more time can be spent on supporting those in need</span>
-                    </span>
+            <div class="bg-color bg-light pad-all-double">
+                <div class="text-center">
+                    <h3>Empowering social services</h3>
+                </div>
+                <article class='xs-full-row m-2-row-3 margin-center text-justify pad-t-double pad-b-double'>
+                    <p><span class='text-bold'>From over-200 interviews</span> with staff, directors, and clients of social service agencies, we know that lack of information leads to frustration, wasted resources, and missed opportunities to help people help themselves leave homelessness. Yet in metropolitan areas across the US, <span class='text-bold'>50 to 70% of people who are homeless have working mobile phones</span>. Up to <span class='text-bold'>90% of those phones have unlimited texting</span>. TextUp is an online mobile communication and collaboration service for case managers that increases staff-client engagement and tracks effectiveness of communication with clients, among staff, and with other social service providers.</p>
+                </article>
+            </div>
+            <article class='row pad-all-double bg-color bg-brand'>
+                <div class="xs-full-row s-row-2 m-5-row-20">
+                    <div class="sprite textup-promo-01-sprite"></div>
+                    <div class='pad-all text-center'>
+                        <h5 class='margin-b halo bg-color'>1</h5>
+                        <p class='text-bold'>Sign up for TextUp.</p></div>
+                    </div>
+                <div class="xs-full-row s-row-2 m-5-row-20">
+                    <div class="sprite textup-promo-02-sprite"></div>
+                    <div class='pad-all text-center'>
+                        <h5 class='margin-b halo bg-color'>2</h5>
+                        <p class='text-bold'>Create however many TextUp phones you'll need for your staff.</p></div>
+                    </div>
+                <div class="xs-full-row s-new-row s-row-2 m-5-row-20">
+                    <div class="sprite textup-promo-03-sprite"></div>
+                    <div class='pad-all text-center'>
+                        <h5 class='margin-b halo bg-color'>3</h5>
+                        <p class='text-bold'>For each staff member, link up personal phone with TextUp phone. That's it!</p></div>
+                    </div>
+                <div class="xs-full-row s-row-2 m-5-row-20">
+                    <div class="sprite textup-promo-04-sprite"></div>
+                    <div class='pad-all text-center'>
+                        <h5 class='margin-b halo bg-color'>4</h5>
+                        <p class='text-bold'>If a staff member leaves, easily transfer the TextUp phone with all records intact to another staff member.</p></div>
+                    </div>
+            </article>
+        </section>
+        <section id="about-benefits">
+            <article class='row pad-all-double'>
+                <div class="xs-full-row s-row-2 m-5-row-20">
+                    <div class="sprite textup-promo-05-sprite"></div>
+                    <div class='pad-all text-center'><h5 class='pad-b'>Accessible</h5>
+                    <p class=''>Easily communicate through your TextUp account using any of your devices.</p></div>
+                </div>
+                <div class="xs-full-row s-row-2 m-5-row-20">
+                    <div class="sprite textup-promo-06-sprite"></div>
+                    <div class='pad-all text-center'><h5 class='pad-b'>Seamless</h5>
+                    <p class=''>Clients can call and text your TextUp phone just like any other phone.</p></div>
+                </div>
+                <div class="xs-full-row s-new-row s-row-2 m-5-row-20">
+                    <div class="sprite textup-promo-07-sprite"></div>
+                    <div class='pad-all text-center'><h5 class='pad-b'>Shareable</h5>
+                    <p class=''>Share contacts with other members of your treatment team to ensure continuous care and constant contact.</p></div>
+                </div>
+                <div class="xs-full-row s-row-2 m-5-row-20">
+                    <div class="sprite textup-promo-08-sprite"></div>
+                    <div class='pad-all text-center'><h5 class='pad-b'>Private</h5>
+                    <p class=''>Enjoy the convenience of mobile communications without publicizing your personal phone number.</p></div>
+                </div>
+                <div class="xs-full-row s-new-row s-row-2 m-new-row m-5-row-20">
+                    <div class="sprite textup-promo-09-sprite"></div>
+                    <div class='pad-all text-center'><h5 class='pad-b'>Collaborative</h5>
+                    <p class=''>Collaborate using a team TextUp phone in addition to your personal TextUp phone.</p></div>
+                </div>
+                <div class="xs-full-row s-row-2 m-5-row-20">
+                    <div class="sprite textup-promo-10-sprite"></div>
+                    <div class='pad-all text-center'><h5 class='pad-b'>Automated</h5>
+                    <p class=''>Automate record keeping of client communication to avoid tedious revisiting later on.</p></div>
+                </div>
+                <div class="xs-full-row s-new-row s-row-2 m-5-row-20">
+                    <div class="sprite textup-promo-11-sprite"></div>
+                    <div class='pad-all text-center'><h5 class='pad-b'>Scheduled Messages</h5>
+                    <p class=''><span class="text-bold">Coming soon.</span> Schedule text reminders for yourself and for clients saving time and energy.</p></div>
+                </div>
+                <div class="xs-full-row s-row-2 m-5-row-20">
+                    <div class="sprite textup-promo-12-sprite"></div>
+                    <div class='pad-all text-center'><h5 class='pad-b'>Announcements</h5>
+                    <p class=''><span class="text-bold">Coming soon.</span> Send call and text-based announcements to your client subscribers to notify them of important updates.</p></div>
                 </div>
             </article>
         </section>
         <section id="about-team">
-            <article class="eric">
-                <div>
-                	<span>x</span>
-                    <h4>Eric Bai</h4>
-                    <p>Eric studies Computational Biology at Brown. Eric has worked with the homeless community in many capacities: in soup kitchens, in shelters, and as an outreach worker. He has experience in full-stack development, prototyping and interviewing.</p>
+            <div class="row">
+                <div class="team-member xs-full-row m-row-3">
+                    <div class="sprite eric-sprite clickable"></div>
+                    <div class='overlay'>
+                        <div class="text-right">
+                            <btn class='clickable btn btn-plain'>Close</btn>
+                        </div>
+                        <h4 class='pad-b'>Eric Bai</h4>
+                        <p class=''>Eric studied Computational Biology at Brown. Eric has worked with the homeless community in many capacities: in soup kitchens, in shelters, and as an outreach worker. He has experience in full-stack development, prototyping and interviewing.</p>
+                    </div>
                 </div>
-            </article
-            ><article class="hanna">
-                <div>
-                	<span>x</span>
-                    <h4>Hanna Oh</h4>
-                    <p>Hanna studied Industrial Design at RISD.She is passionate about designing systems and services that improve the quality of life for individuals. Hanna wants TextUp to change pre-existing system that is not working well for users.</p>
+                <div class="team-member xs-full-row m-row-3">
+                    <div class="sprite hanna-sprite clickable"></div>
+                    <div class='overlay'>
+                        <div class="text-right">
+                            <btn class='clickable btn btn-plain'>Close</btn>
+                        </div>
+                        <h4 class='pad-b'>Hanna Oh</h4>
+                        <p class=''>Hanna studied Industrial Design at RISD. She is passionate about designing systems and services that improve the quality of life for individuals. Hanna wants TextUp to change pre-existing system that is not working well for users.</p>
+                    </div>
                 </div>
-            </article
-            ><article class="michelle">
-                <div>
-                	<span>x</span>
-                    <h4>Michelle Petersen</h4>
-                    <p>Michelle explores innovative healthcare practices through Public Health &amp; Public Policy. Michelle can be found volunteering at Hasbro Children's Hospital, working for the American Academy of Addiction Psychiatry, or baking treats for her fellow Social Action House members.</p>
+                <div class="team-member xs-full-row m-row-3">
+                    <div class="sprite michelle-sprite clickable"></div>
+                    <div class='overlay'>
+                        <div class="text-right">
+                            <btn class='clickable btn btn-plain'>Close</btn>
+                        </div>
+                        <h4 class='pad-b'>Michelle Petersen</h4>
+                        <p class=''>Michelle explores innovative healthcare practices through Public Health &amp; Public Policy. Michelle can be found volunteering at Hasbro Children's Hospital, working for the American Academy of Addiction Psychiatry, or baking treats for her fellow Social Action House members.</p>
+                    </div>
                 </div>
-            </article>
-
+            </div>
         </section>
-        <section id="about-partners">
-            <p>We are privileged to work with incredible partners in <b>Cambridge, Providence, and Rhode Island as a whole</b>. Their support, advice, and feedback help make TextUp happen.</p>
-            <article>
-                <img src="../images/partners/brown-horizontal.gif" alt="Brown University">
-                <img src="../images/partners/swearer.png" alt="Swearer Center">
-                <img src="../images/partners/risd.gif" alt="RISD">
-                <img src="../images/partners/venturewell.png" alt="VentureWell">
-                <img src="../images/partners/uwri.jpg" alt="United Way of Rhode Island">
-                <img src="../images/partners/rich.jpg" alt="Rhode Island Coalition for the Homeless">
-                <img src="../images/partners/hohcdc.png" alt="House of Hope CDC">
-                <img src="../images/partners/amos.png" alt="Amos House">
-                <img src="../images/partners/y2y.jpg" alt="Y2Y Harvard Square">
-                <img src="../images/partners/rhody.jpg" alt="Rhody Food On The Move">
+        <section id="about-partners" class='pad-all-double'>
+            <div class="row">
+                <p class='xs-full-row m-2-row-3 margin-center text-justify pad-t-double pad-b-double'>We are privileged to work with incredible partners in <span class='text-bold'>Cambridge, Providence, and Rhode Island</span>. Their support, advice, and feedback help make TextUp happen.</p>
+            </div>
+            <article class='row text-center'>
+                <div class="xs-row-2 s-row-3 pad-b-half">
+                    <div class='sprite amos-sprite'></div>
+                </div>
+                <div class="xs-row-2 s-row-3 pad-b-half">
+                    <div class='sprite brown-sprite'></div>
+                </div>
+                <div class="xs-row-2 s-row-3 pad-b-half">
+                    <div class='sprite hohcdc-sprite'></div>
+                </div>
+                <div class="xs-row-2 s-row-3 pad-b-half">
+                    <div class='sprite rhody-sprite'></div>
+                </div>
+                <div class="xs-row-2 s-row-3 pad-b-half">
+                    <div class='sprite rich-sprite'></div>
+                </div>
+                <div class="xs-row-2 s-row-3 pad-b-half">
+                    <div class='sprite risd-sprite'></div>
+                </div>
+                <div class="xs-row-2 s-row-3 pad-b-half">
+                    <div class='sprite sii-sprite'></div>
+                </div>
+                <div class="xs-row-2 s-row-3 pad-b-half">
+                    <div class='sprite swearer-sprite'></div>
+                </div>
+                <div class="xs-row-2 s-row-3 pad-b-half">
+                    <div class='sprite uwri-sprite'></div>
+                </div>
+                <div class="xs-row-2 s-row-3 pad-b-half">
+                    <div class='sprite venturewell-sprite'></div>
+                </div>
+                <div class="xs-row-2 s-row-3 pad-b-half">
+                    <div class='sprite y2y-sprite'></div>
+                </div>
             </article>
         </section>
     </main>
-    <footer>
-        <span class="left"><span>2015 TextUp</span></span>
-        <span class="right">Get in touch at <b>connect@textup.org</b></span>
+    <footer class='bg-color bg-brand'>
+        <div class="row pad-all-double">
+            <span class="pull-right">Get in touch at <b>connect@textup.org</b></span>
+        </div>
     </footer>
 
-    <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script type="text/javascript" src="js/prefixfree.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+{
+  "name": "textup-site",
+  "version": "1.0.0",
+  "description": "TextUp website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^3.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericbai/textup-site.git"
+  },
+  "keywords": [
+    "textup",
+    "website"
+  ],
+  "author": "Eric <heyericbai@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericbai/textup-site/issues"
+  },
+  "homepage": "https://github.com/ericbai/textup-site#readme"
+}

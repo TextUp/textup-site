@@ -1,0 +1,25 @@
+{
+  "name": "textup-site",
+  "homepage": "https://github.com/ericbai/textup-site",
+  "authors": [
+    "Eric <heyericbai@gmail.com>"
+  ],
+  "description": "TextUp website",
+  "main": "index.html",
+  "keywords": [
+    "website",
+    "textup"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sass-mq": "^3.2.9"
+  }
+}
