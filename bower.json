@@ -19,7 +19,5 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "sass-mq": "^3.2.9"
-  }
+  "dependencies": {}
 }
