@@ -8,7 +8,7 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
-* Some simple web server for development, perhaps [Python](https://www.python.org/)
+* Some simple web server for development, perhaps SimpleHTTPServer in [Python 2](https://www.python.org/)
 
 ## Installation
 
@@ -16,7 +16,7 @@ You will need the following things properly installed on your computer.
  1. `git clone --recursive <repository-url>`
  2. `git fetch` + `git submodule sync --recursive` + `git submodule update --init --recursive`
 * Change into the new directory
-* For ease of use, create a remote to the core styles repository with `git remote add styles git@github.com:TextUp/textup-site.git`
+* For ease of use, create a remote to the core styles repository with `git remote add styles git@github.com:TextUp/textup-styles.git`
 * `npm install`
 
 ## Pulling / Pushing
@@ -37,5 +37,6 @@ However, the main drawback of this command is that all commits that touched the 
 
 * Change directories to the root of this project
 * If Python 2, `python -m SimpleHTTPServer`
-*
+* To initially build stylesheet, `node-sass -o . styles/main.scss`
+* To watch stylesheets for subsequent changes, `node-sass -o . -r -w styles/main.scss`
 * Visit your app at [http://localhost:8000](http://localhost:800).
