@@ -19,11 +19,14 @@ hr {
     }
 }
 .no-space {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 @include spacing-tweaks(margin, 'margin');
 @include spacing-tweaks(padding, 'pad');
+.border-all {
+    border: 1px solid $border-color;
+}
 @each $direction, $abbr in $directions-with-abbr {
     .border-#{$abbr} {
         border-#{$direction}: 1px solid $border-color;
@@ -32,6 +35,14 @@ hr {
 .bg-color {
     background-color: $bg-color;
 
+    &.bg-brand {
+        background-color: $brand-color;
+        color: contrast-color($brand-color);
+    }
+    &.bg-brand-dark {
+        background-color: shade($brand-color);
+        color: contrast-color(shade($brand-color));
+    }
     &.bg-dark {
         background-color: shade($bg-color);
     }
@@ -55,6 +66,10 @@ hr {
 // Centering
 // ---------
 
+.margin-center {
+    float: none !important;
+    margin: 0 auto;
+}
 .v-center {
     position: absolute;
     top: 50%;
@@ -85,6 +100,15 @@ hr {
 // Badges
 // ------
 
+.halo {
+    border-radius: 100%;
+    display: inline-block;
+    padding: (0.5 * $padding) (1 * $padding);
+
+    &.halo-sm {
+        padding: ($padding * 0.15) ($padding * 0.6);
+    }
+}
 .badge {
     @extend %border-box;
     max-width: initial;
@@ -129,6 +153,7 @@ hr {
 }
 .badge-divider {
     @extend .badge;
+    background-color: transparent;
     border-radius: 0;
     border-left: 1px solid $border-color;
     margin-right: $badge-h-space;
