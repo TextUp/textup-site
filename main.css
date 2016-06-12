@@ -422,9 +422,21 @@ th {
   font-family: 'Bitter';
   src: url("fonts/Bitter.woff2") format("woff2"), url("fonts/Bitter.woff") format("woff"), url("fonts/Bitter.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'Lato';
+  src: url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
 body {
   margin: 0;
-  font-family: helvetica, arial, sans-serif;
+  font-family: 'Lato', helvetica, arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -466,6 +478,15 @@ h5 {
 .match-color {
   color: inherit; }
 
+.text-darken, .emphasize {
+  color: #505050; }
+
+.text-lighten {
+  color: #cccccc; }
+
+.text-white {
+  color: #fff; }
+
 .text-center, nav .nav-items .nav-item {
   text-align: center; }
 
@@ -478,25 +499,34 @@ h5 {
 .text-right, .pull-right {
   text-align: right; }
 
-.text-darken, .emphasize {
-  color: #505050; }
-
 .text-bold, .emphasize {
   font-weight: 700; }
 
 .text-normal {
   font-weight: 400; }
 
-.text-lighten {
-  color: #fff; }
-
 .text-ellipsis, .control-text {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden; }
 
-.small {
+.text-biggest {
+  font-size: 1.5em; }
+
+.text-bigger {
+  font-size: 1.3em; }
+
+.text-big {
+  font-size: 1.1em; }
+
+.text-small {
   font-size: 0.9em; }
+
+.text-smaller {
+  font-size: 0.7em; }
+
+.text-smallest {
+  font-size: 0.5em; }
 
 .emphasize {
   margin-bottom: 0.3em; }
@@ -535,16 +565,21 @@ h5 {
       outline: 0;
       border-color: transparent; }
 
-.form-error .form-control, .form-error .input-group > .input-group-text-display, .form-error .input-group > .input-group-addon.blend-in .btn, .input-group > .input-group-addon.blend-in .form-error .btn {
+.form-error.form-control, .input-group > .form-error.input-group-text-display, .input-group > .input-group-addon.blend-in .form-error.btn, .form-error, .form-error .form-control, .form-error .input-group > .input-group-text-display, .form-error .input-group > .input-group-addon.blend-in .btn, .input-group > .input-group-addon.blend-in .form-error .btn {
+  color: #d9534f;
   border-bottom-color: #d9534f; }
-  .form-error .form-control:hover, .form-error .input-group > .input-group-text-display:hover, .form-error .input-group > .input-group-addon.blend-in .btn:hover, .input-group > .input-group-addon.blend-in .form-error .btn:hover {
+  .input-group > .input-group-addon.blend-in .form-error.btn:hover, .form-error:hover, .form-error .form-control:hover, .form-error .input-group > .input-group-text-display:hover, .form-error .input-group > .input-group-addon.blend-in .btn:hover, .input-group > .input-group-addon.blend-in .form-error .btn:hover {
+    color: #c9302c;
     border-bottom-color: #c9302c; }
-  .form-error .form-control:active, .form-error .input-group > .input-group-text-display:active, .form-error .input-group > .input-group-addon.blend-in .btn:active, .input-group > .input-group-addon.blend-in .form-error .btn:active, .form-error .form-control:focus, .form-error .input-group > .input-group-text-display:focus, .form-error .input-group > .input-group-addon.blend-in .btn:focus, .input-group > .input-group-addon.blend-in .form-error .btn:focus {
+  .input-group > .input-group-addon.blend-in .form-error.btn:active, .form-error:active, .form-error .form-control:active, .form-error .input-group > .input-group-text-display:active, .form-error .input-group > .input-group-addon.blend-in .btn:active, .input-group > .input-group-addon.blend-in .form-error .btn:active, .input-group > .input-group-addon.blend-in .form-error.btn:focus, .form-error:focus, .form-error .form-control:focus, .form-error .input-group > .input-group-text-display:focus, .form-error .input-group > .input-group-addon.blend-in .btn:focus, .input-group > .input-group-addon.blend-in .form-error .btn:focus {
+    color: #9f2623;
     border-bottom-color: #9f2623; }
 
-.form-disabled .form-control, .form-disabled .input-group > .input-group-text-display, .form-disabled .input-group > .input-group-addon.blend-in .btn, .input-group > .input-group-addon.blend-in .form-disabled .btn {
+.form-disabled.form-control, .input-group > .form-disabled.input-group-text-display, .input-group > .input-group-addon.blend-in .form-disabled.btn, .form-disabled, .form-disabled .form-control, .form-disabled .input-group > .input-group-text-display, .form-disabled .input-group > .input-group-addon.blend-in .btn, .input-group > .input-group-addon.blend-in .form-disabled .btn {
+  color: #a0a0a0;
   border-bottom-color: #d3d3d3; }
-  .form-disabled .form-control:hover, .form-disabled .input-group > .input-group-text-display:hover, .form-disabled .input-group > .input-group-addon.blend-in .btn:hover, .input-group > .input-group-addon.blend-in .form-disabled .btn:hover, .form-disabled .form-control:active, .form-disabled .input-group > .input-group-text-display:active, .form-disabled .input-group > .input-group-addon.blend-in .btn:active, .input-group > .input-group-addon.blend-in .form-disabled .btn:active, .form-disabled .form-control:focus, .form-disabled .input-group > .input-group-text-display:focus, .form-disabled .input-group > .input-group-addon.blend-in .btn:focus, .input-group > .input-group-addon.blend-in .form-disabled .btn:focus {
+  .input-group > .input-group-addon.blend-in .form-disabled.btn:hover, .form-disabled:hover, .form-disabled .form-control:hover, .form-disabled .input-group > .input-group-text-display:hover, .form-disabled .input-group > .input-group-addon.blend-in .btn:hover, .input-group > .input-group-addon.blend-in .form-disabled .btn:hover, .input-group > .input-group-addon.blend-in .form-disabled.btn:active, .form-disabled:active, .form-disabled .form-control:active, .form-disabled .input-group > .input-group-text-display:active, .form-disabled .input-group > .input-group-addon.blend-in .btn:active, .input-group > .input-group-addon.blend-in .form-disabled .btn:active, .input-group > .input-group-addon.blend-in .form-disabled.btn:focus, .form-disabled:focus, .form-disabled .form-control:focus, .form-disabled .input-group > .input-group-text-display:focus, .form-disabled .input-group > .input-group-addon.blend-in .btn:focus, .input-group > .input-group-addon.blend-in .form-disabled .btn:focus {
+    color: #a0a0a0;
     border-bottom-color: #d3d3d3; }
 
 .btn {
@@ -605,9 +640,7 @@ h5 {
     height: 100%; }
   .btn.btn-span {
     width: 100%;
-    border-radius: 0;
-    border-left-width: 0;
-    border-right-width: 0; }
+    border-radius: 0; }
   .btn .horizontal-items {
     position: relative;
     top: -0.2em; }
@@ -647,6 +680,7 @@ input[type="checkbox"]:checked:after {
 .form-element {
   margin-bottom: 1em; }
   .form-element label {
+    font-size: 1.1em;
     font-weight: 700;
     display: block;
     margin-bottom: 0.3em; }
@@ -673,6 +707,8 @@ textarea.form-control {
     width: 100%; }
   .input-group > :not(.input-group) {
     display: table-cell; }
+  .input-group > .input-group-element, .input-group > .form-control {
+    vertical-align: middle; }
   .input-group > .input-group-text {
     line-height: 2.35714em;
     padding: 0 0.7em;
@@ -689,8 +725,7 @@ textarea.form-control {
   .input-group > .input-group-addon {
     min-width: 3.57143em;
     width: 1%;
-    white-space: nowrap;
-    vertical-align: middle; }
+    white-space: nowrap; }
     .input-group > .input-group-addon.expand {
       width: auto; }
     .input-group > .input-group-addon.blend-in .btn {
@@ -729,8 +764,8 @@ hr {
     cursor: pointer; }
 
 .no-space {
-  margin: 0;
-  padding: 0; }
+  margin: 0 !important;
+  padding: 0 !important; }
 
 .margin-all {
   margin: 1em; }
@@ -948,6 +983,9 @@ hr {
 .pad-b-triple.pad-b {
   padding-bottom: 3em; }
 
+.border-all {
+  border: 1px solid #d3d3d3; }
+
 .border-l {
   border-left: 1px solid #d3d3d3; }
 
@@ -1019,6 +1057,8 @@ hr {
   border-radius: 100%;
   display: inline-block;
   padding: 0.5em 1em; }
+  .halo.halo-sm {
+    padding: 0.15em 0.6em; }
 
 .badge, .clear-badge, .badge-divider {
   max-width: initial;
@@ -1052,6 +1092,7 @@ hr {
   border-width: 0; }
 
 .badge-divider {
+  background-color: transparent;
   border-radius: 0;
   border-left: 1px solid #d3d3d3;
   margin-right: 0.4em; }
@@ -2072,6 +2113,9 @@ li.display-xs {
   width: 184px;
   height: 80px; }
 
+body {
+  font-size: 16px; }
+
 .icon-bar {
   display: block;
   width: 100%;
@@ -2123,14 +2167,14 @@ nav {
 #about-overview {
   height: 85vh;
   background: #3399cc;
-  background-image: linear-gradient(transparent 62%, rgba(0, 0, 0, 0.5) 62%); }
+  background-image: linear-gradient(transparent 57%, rgba(0, 0, 0, 0.5) 57%); }
   #about-overview .animated-container {
     position: relative;
     overflow: hidden;
-    height: 60.775vh;
+    height: 56.1vh;
     text-align: center; }
     #about-overview .animated-container .animated-item {
-      height: 55.25vh;
+      height: 51vh;
       position: absolute; }
       #about-overview .animated-container .animated-item:first-child {
         right: 39%; }
