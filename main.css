@@ -371,11 +371,15 @@ th {
         background: #6d6d6d;
         border-radius: 0; } }
 
-.form-control, .input-group > .input-group-text-display, .input-group > .input-group-addon.blend-in .btn, .btn, .margin-all, .margin-l, .margin-r, .margin-t, .margin-b, .margin-all-half, .margin-half.margin-l, .margin-l-half,
+.form-control, .input-group > .input-group-text-display, .input-group > .input-group-addon.blend-in .btn:not(:disabled), .btn, .margin-all, .margin-l, .margin-r, .margin-t, .margin-b, .margin-all-half, .margin-half.margin-l, .margin-l-half,
 .margin-l-half.margin-l, .margin-half.margin-r, .margin-r-half,
 .margin-r-half.margin-r, .margin-half.margin-t, .margin-t-half,
 .margin-t-half.margin-t, .margin-half.margin-b, .margin-b-half,
-.margin-b-half.margin-b, .margin-all-double, .margin-double.margin-l, .margin-l-double,
+.margin-b-half.margin-b, .margin-all-quarter, .margin-quarter.margin-l, .margin-l-quarter,
+.margin-l-quarter.margin-l, .margin-quarter.margin-r, .margin-r-quarter,
+.margin-r-quarter.margin-r, .margin-quarter.margin-t, .margin-t-quarter,
+.margin-t-quarter.margin-t, .margin-quarter.margin-b, .margin-b-quarter,
+.margin-b-quarter.margin-b, .margin-all-double, .margin-double.margin-l, .margin-l-double,
 .margin-l-double.margin-l, .margin-double.margin-r, .margin-r-double,
 .margin-r-double.margin-r, .margin-double.margin-t, .margin-t-double,
 .margin-t-double.margin-t, .margin-double.margin-b, .margin-b-double,
@@ -383,11 +387,19 @@ th {
 .margin-l-triple.margin-l, .margin-triple.margin-r, .margin-r-triple,
 .margin-r-triple.margin-r, .margin-triple.margin-t, .margin-t-triple,
 .margin-t-triple.margin-t, .margin-triple.margin-b, .margin-b-triple,
-.margin-b-triple.margin-b, .pad-all, .pad-l, .pad-r, .pad-t, .pad-b, .pad-all-half, .pad-half.pad-l, .pad-l-half,
+.margin-b-triple.margin-b, .margin-all-4x, .margin-4x.margin-l, .margin-l-4x,
+.margin-l-4x.margin-l, .margin-4x.margin-r, .margin-r-4x,
+.margin-r-4x.margin-r, .margin-4x.margin-t, .margin-t-4x,
+.margin-t-4x.margin-t, .margin-4x.margin-b, .margin-b-4x,
+.margin-b-4x.margin-b, .pad-all, .pad-l, .pad-r, .pad-t, .pad-b, .pad-all-half, .pad-half.pad-l, .pad-l-half,
 .pad-l-half.pad-l, .pad-half.pad-r, .pad-r-half,
 .pad-r-half.pad-r, .pad-half.pad-t, .pad-t-half,
 .pad-t-half.pad-t, .pad-half.pad-b, .pad-b-half,
-.pad-b-half.pad-b, .pad-all-double, .pad-double.pad-l, .pad-l-double,
+.pad-b-half.pad-b, .pad-all-quarter, .pad-quarter.pad-l, .pad-l-quarter,
+.pad-l-quarter.pad-l, .pad-quarter.pad-r, .pad-r-quarter,
+.pad-r-quarter.pad-r, .pad-quarter.pad-t, .pad-t-quarter,
+.pad-t-quarter.pad-t, .pad-quarter.pad-b, .pad-b-quarter,
+.pad-b-quarter.pad-b, .pad-all-double, .pad-double.pad-l, .pad-l-double,
 .pad-l-double.pad-l, .pad-double.pad-r, .pad-r-double,
 .pad-r-double.pad-r, .pad-double.pad-t, .pad-t-double,
 .pad-t-double.pad-t, .pad-double.pad-b, .pad-b-double,
@@ -395,7 +407,11 @@ th {
 .pad-l-triple.pad-l, .pad-triple.pad-r, .pad-r-triple,
 .pad-r-triple.pad-r, .pad-triple.pad-t, .pad-t-triple,
 .pad-t-triple.pad-t, .pad-triple.pad-b, .pad-b-triple,
-.pad-b-triple.pad-b, .badge, .clear-badge, .badge-divider, .row, nav .nav-items, nav .nav-items .nav-item, #about-overview .animated-container, #about-team .team-member .overlay {
+.pad-b-triple.pad-b, .pad-all-4x, .pad-4x.pad-l, .pad-l-4x,
+.pad-l-4x.pad-l, .pad-4x.pad-r, .pad-r-4x,
+.pad-r-4x.pad-r, .pad-4x.pad-t, .pad-t-4x,
+.pad-t-4x.pad-t, .pad-4x.pad-b, .pad-b-4x,
+.pad-b-4x.pad-b, .badge, .clear-badge, .badge-divider, .row, nav .nav-items, nav .nav-items .nav-item, #about-overview .animated-container, #about-team .team-member .overlay {
   box-sizing: border-box; }
 
 .row:after {
@@ -496,7 +512,7 @@ h5 {
 .text-left {
   text-align: left; }
 
-.text-right, .pull-right {
+.text-right, .pull-right, .pull-right-to-edge {
   text-align: right; }
 
 .text-bold, .emphasize {
@@ -510,14 +526,26 @@ h5 {
   text-overflow: ellipsis;
   overflow: hidden; }
 
+.text-wrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto; }
+
 .text-biggest {
   font-size: 1.5em; }
+  .text-biggest.form-control, .text-biggest .form-control {
+    padding: 0 0.7em; }
 
 .text-bigger {
   font-size: 1.3em; }
+  .text-bigger.form-control, .text-bigger .form-control {
+    padding: 0 0.8em; }
 
 .text-big {
   font-size: 1.1em; }
+  .text-big.form-control, .text-big .form-control {
+    padding: 0 0.9em; }
 
 .text-small {
   font-size: 0.9em; }
@@ -534,51 +562,51 @@ h5 {
 .control-text {
   line-height: 2.5em; }
 
-.form-control:disabled, .input-group > .input-group-text-display:disabled, .input-group > .input-group-addon.blend-in .btn:disabled, .btn:disabled, .btn.btn-danger:disabled:not(.btn-plain), .btn.btn-success:disabled:not(.btn-plain), .btn.btn-default:disabled:not(.btn-plain), .disabled.form-control, .input-group > .disabled.input-group-text-display, .input-group > .input-group-addon.blend-in .disabled.btn, .disabled.btn, .disabled.btn.btn-danger:not(.btn-plain), .disabled.btn.btn-success:not(.btn-plain), .disabled.btn.btn-default:not(.btn-plain) {
+.form-control:disabled, .input-group > .input-group-text-display:disabled, .input-group > .input-group-addon.blend-in .btn:disabled:not(:disabled), .btn:disabled, .btn.btn-danger:disabled:not(.btn-plain):not(:disabled), .btn.btn-success:disabled:not(.btn-plain):not(:disabled), .btn.btn-default:disabled:not(.btn-plain):not(:disabled), .disabled.form-control, .input-group > .disabled.input-group-text-display, .input-group > .input-group-addon.blend-in .disabled.btn:not(:disabled), .disabled.btn, .disabled.btn.btn-danger:not(.btn-plain):not(:disabled), .disabled.btn.btn-success:not(.btn-plain):not(:disabled), .disabled.btn.btn-default:not(.btn-plain):not(:disabled) {
   background-color: #fff;
   color: #737373;
   border-bottom-color: #d3d3d3;
   opacity: 1; }
-  .input-group > .input-group-addon.blend-in :disabled.btn, :disabled.btn, .btn-danger:disabled.btn:not(.btn-plain), .btn-success:disabled.btn:not(.btn-plain), .btn-default:disabled.btn:not(.btn-plain), .input-group > .input-group-addon.blend-in .disabled.btn, .disabled.btn, .disabled.btn.btn-danger:not(.btn-plain), .disabled.btn.btn-success:not(.btn-plain), .disabled.btn.btn-default:not(.btn-plain) {
+  .input-group > .input-group-addon.blend-in :disabled.btn:not(:disabled), :disabled.btn, .btn-danger:disabled.btn:not(.btn-plain):not(:disabled), .btn-success:disabled.btn:not(.btn-plain):not(:disabled), .btn-default:disabled.btn:not(.btn-plain):not(:disabled), .input-group > .input-group-addon.blend-in .disabled.btn:not(:disabled), .disabled.btn, .disabled.btn.btn-danger:not(.btn-plain):not(:disabled), .disabled.btn.btn-success:not(.btn-plain):not(:disabled), .disabled.btn.btn-default:not(.btn-plain):not(:disabled) {
     border-color: #ededed;
     border-bottom-color: #d3d3d3; }
 
-.form-control, .input-group > .input-group-text-display, .input-group > .input-group-addon.blend-in .btn {
+.form-control, .input-group > .input-group-text-display, .input-group > .input-group-addon.blend-in .btn:not(:disabled) {
   box-shadow: none;
   border-radius: 3px;
   background-color: #fff;
   border: 1px solid #ededed;
   border-bottom: 3px solid #5cadd6;
   appearance: none; }
-  .form-control:hover, .input-group > .input-group-text-display:hover, .input-group > .input-group-addon.blend-in .btn:hover {
+  .form-control:hover, .input-group > .input-group-text-display:hover, .input-group > .input-group-addon.blend-in .btn:hover:not(:disabled) {
     border-color: #d3d3d3;
     border-bottom-color: #3399cc; }
-  .form-control:active, .input-group > .input-group-text-display:active, .input-group > .input-group-addon.blend-in .btn:active, .form-control:focus, .input-group > .input-group-text-display:focus, .input-group > .input-group-addon.blend-in .btn:focus, .focus.form-control, .input-group > .focus.input-group-text-display, .input-group > .input-group-addon.blend-in .focus.btn {
+  .form-control:active, .input-group > .input-group-text-display:active, .input-group > .input-group-addon.blend-in .btn:active:not(:disabled), .form-control:focus, .input-group > .input-group-text-display:focus, .input-group > .input-group-addon.blend-in .btn:focus:not(:disabled), .focus.form-control, .input-group > .focus.input-group-text-display, .input-group > .input-group-addon.blend-in .focus.btn:not(:disabled) {
     outline: 0;
     border-color: #bababa;
     border-bottom-color: #297aa3; }
-  .silent.form-control, .input-group > .silent.input-group-text-display, .input-group > .input-group-addon.blend-in .silent.btn {
+  .silent.form-control, .input-group > .silent.input-group-text-display, .input-group > .input-group-addon.blend-in .silent.btn:not(:disabled) {
     border-color: transparent; }
-    .silent.form-control:hover, .input-group > .silent.input-group-text-display:hover, .input-group > .input-group-addon.blend-in .silent.btn:hover {
+    .silent.form-control:hover, .input-group > .silent.input-group-text-display:hover, .input-group > .input-group-addon.blend-in .silent.btn:hover:not(:disabled) {
       border-color: transparent; }
-    .silent.form-control:active, .input-group > .silent.input-group-text-display:active, .input-group > .input-group-addon.blend-in .silent.btn:active, .silent.form-control:focus, .input-group > .silent.input-group-text-display:focus, .input-group > .input-group-addon.blend-in .silent.btn:focus, .silent.focus.form-control, .input-group > .silent.focus.input-group-text-display, .input-group > .input-group-addon.blend-in .silent.focus.btn {
+    .silent.form-control:active, .input-group > .silent.input-group-text-display:active, .input-group > .input-group-addon.blend-in .silent.btn:active:not(:disabled), .silent.form-control:focus, .input-group > .silent.input-group-text-display:focus, .input-group > .input-group-addon.blend-in .silent.btn:focus:not(:disabled), .silent.focus.form-control, .input-group > .silent.focus.input-group-text-display, .input-group > .input-group-addon.blend-in .silent.focus.btn:not(:disabled) {
       outline: 0;
       border-color: transparent; }
 
-.form-error.form-control, .input-group > .form-error.input-group-text-display, .input-group > .input-group-addon.blend-in .form-error.btn, .form-error, .form-error .form-control, .form-error .input-group > .input-group-text-display, .form-error .input-group > .input-group-addon.blend-in .btn, .input-group > .input-group-addon.blend-in .form-error .btn {
+.form-error.form-control, .input-group > .form-error.input-group-text-display, .input-group > .input-group-addon.blend-in .form-error.btn:not(:disabled), .form-error, .form-error .form-control, .form-error .input-group > .input-group-text-display, .form-error .input-group > .input-group-addon.blend-in .btn:not(:disabled), .input-group > .input-group-addon.blend-in .form-error .btn:not(:disabled) {
   color: #d9534f;
   border-bottom-color: #d9534f; }
-  .input-group > .input-group-addon.blend-in .form-error.btn:hover, .form-error:hover, .form-error .form-control:hover, .form-error .input-group > .input-group-text-display:hover, .form-error .input-group > .input-group-addon.blend-in .btn:hover, .input-group > .input-group-addon.blend-in .form-error .btn:hover {
+  .input-group > .input-group-addon.blend-in .form-error.btn:hover:not(:disabled), .form-error:hover, .form-error .form-control:hover, .form-error .input-group > .input-group-text-display:hover, .form-error .input-group > .input-group-addon.blend-in .btn:hover:not(:disabled), .input-group > .input-group-addon.blend-in .form-error .btn:hover:not(:disabled) {
     color: #c9302c;
     border-bottom-color: #c9302c; }
-  .input-group > .input-group-addon.blend-in .form-error.btn:active, .form-error:active, .form-error .form-control:active, .form-error .input-group > .input-group-text-display:active, .form-error .input-group > .input-group-addon.blend-in .btn:active, .input-group > .input-group-addon.blend-in .form-error .btn:active, .input-group > .input-group-addon.blend-in .form-error.btn:focus, .form-error:focus, .form-error .form-control:focus, .form-error .input-group > .input-group-text-display:focus, .form-error .input-group > .input-group-addon.blend-in .btn:focus, .input-group > .input-group-addon.blend-in .form-error .btn:focus {
+  .input-group > .input-group-addon.blend-in .form-error.btn:active:not(:disabled), .form-error:active, .form-error .form-control:active, .form-error .input-group > .input-group-text-display:active, .form-error .input-group > .input-group-addon.blend-in .btn:active:not(:disabled), .input-group > .input-group-addon.blend-in .form-error .btn:active:not(:disabled), .input-group > .input-group-addon.blend-in .form-error.btn:focus:not(:disabled), .form-error:focus, .form-error .form-control:focus, .form-error .input-group > .input-group-text-display:focus, .form-error .input-group > .input-group-addon.blend-in .btn:focus:not(:disabled), .input-group > .input-group-addon.blend-in .form-error .btn:focus:not(:disabled) {
     color: #9f2623;
     border-bottom-color: #9f2623; }
 
-.form-disabled.form-control, .input-group > .form-disabled.input-group-text-display, .input-group > .input-group-addon.blend-in .form-disabled.btn, .form-disabled, .form-disabled .form-control, .form-disabled .input-group > .input-group-text-display, .form-disabled .input-group > .input-group-addon.blend-in .btn, .input-group > .input-group-addon.blend-in .form-disabled .btn {
+.form-disabled.form-control, .input-group > .form-disabled.input-group-text-display, .input-group > .input-group-addon.blend-in .form-disabled.btn:not(:disabled), .form-disabled, .form-disabled .form-control, .form-disabled .input-group > .input-group-text-display, .form-disabled .input-group > .input-group-addon.blend-in .btn:not(:disabled), .input-group > .input-group-addon.blend-in .form-disabled .btn:not(:disabled) {
   color: #a0a0a0;
   border-bottom-color: #d3d3d3; }
-  .input-group > .input-group-addon.blend-in .form-disabled.btn:hover, .form-disabled:hover, .form-disabled .form-control:hover, .form-disabled .input-group > .input-group-text-display:hover, .form-disabled .input-group > .input-group-addon.blend-in .btn:hover, .input-group > .input-group-addon.blend-in .form-disabled .btn:hover, .input-group > .input-group-addon.blend-in .form-disabled.btn:active, .form-disabled:active, .form-disabled .form-control:active, .form-disabled .input-group > .input-group-text-display:active, .form-disabled .input-group > .input-group-addon.blend-in .btn:active, .input-group > .input-group-addon.blend-in .form-disabled .btn:active, .input-group > .input-group-addon.blend-in .form-disabled.btn:focus, .form-disabled:focus, .form-disabled .form-control:focus, .form-disabled .input-group > .input-group-text-display:focus, .form-disabled .input-group > .input-group-addon.blend-in .btn:focus, .input-group > .input-group-addon.blend-in .form-disabled .btn:focus {
+  .input-group > .input-group-addon.blend-in .form-disabled.btn:hover:not(:disabled), .form-disabled:hover, .form-disabled .form-control:hover, .form-disabled .input-group > .input-group-text-display:hover, .form-disabled .input-group > .input-group-addon.blend-in .btn:hover:not(:disabled), .input-group > .input-group-addon.blend-in .form-disabled .btn:hover:not(:disabled), .input-group > .input-group-addon.blend-in .form-disabled.btn:active:not(:disabled), .form-disabled:active, .form-disabled .form-control:active, .form-disabled .input-group > .input-group-text-display:active, .form-disabled .input-group > .input-group-addon.blend-in .btn:active:not(:disabled), .input-group > .input-group-addon.blend-in .form-disabled .btn:active:not(:disabled), .input-group > .input-group-addon.blend-in .form-disabled.btn:focus:not(:disabled), .form-disabled:focus, .form-disabled .form-control:focus, .form-disabled .input-group > .input-group-text-display:focus, .form-disabled .input-group > .input-group-addon.blend-in .btn:focus:not(:disabled), .input-group > .input-group-addon.blend-in .form-disabled .btn:focus:not(:disabled) {
     color: #a0a0a0;
     border-bottom-color: #d3d3d3; }
 
@@ -605,33 +633,35 @@ h5 {
     border-color: transparent;
     background-color: transparent;
     color: inherit; }
-    .btn.btn-plain.btn-danger {
+    .btn.btn-plain.btn-danger:not(:disabled) {
       color: #c9302c; }
-    .btn.btn-plain.btn-success {
+    .btn.btn-plain.btn-success:not(:disabled) {
       color: #56a556; }
-    .btn.btn-plain.btn-default {
+    .btn.btn-plain.btn-default:not(:disabled) {
       color: #3399cc; }
-  .btn:not(.btn-plain).btn-danger {
+    .btn.btn-plain:disabled, .btn.btn-plain.disabled {
+      background-color: #f8f8f8; }
+  .btn:not(.btn-plain):not(:disabled).btn-danger {
     color: white;
     background-color: #c9302c;
     border-color: #9f2623; }
-    .btn:not(.btn-plain).btn-danger:hover, .btn:not(.btn-plain).btn-danger:focus, .btn:not(.btn-plain).btn-danger:active, .btn:not(.btn-plain).btn-danger.active {
+    .btn:not(.btn-plain):not(:disabled).btn-danger:hover, .btn:not(.btn-plain):not(:disabled).btn-danger:focus, .btn:not(.btn-plain):not(:disabled).btn-danger:active, .btn:not(.btn-plain):not(:disabled).btn-danger.active {
       color: #fdf7f7;
       background-color: #751c1a;
       border-color: #4b1211; }
-  .btn:not(.btn-plain).btn-success {
+  .btn:not(.btn-plain):not(:disabled).btn-success {
     color: white;
     background-color: #56a556;
     border-color: #458345; }
-    .btn:not(.btn-plain).btn-success:hover, .btn:not(.btn-plain).btn-success:focus, .btn:not(.btn-plain).btn-success:active, .btn:not(.btn-plain).btn-success.active {
+    .btn:not(.btn-plain):not(:disabled).btn-success:hover, .btn:not(.btn-plain):not(:disabled).btn-success:focus, .btn:not(.btn-plain):not(:disabled).btn-success:active, .btn:not(.btn-plain):not(:disabled).btn-success.active {
       color: #fcfefc;
       background-color: #336233;
       border-color: #224022; }
-  .btn:not(.btn-plain).btn-default {
+  .btn:not(.btn-plain):not(:disabled).btn-default {
     color: white;
     background-color: #3399cc;
     border-color: #297aa3; }
-    .btn:not(.btn-plain).btn-default:hover, .btn:not(.btn-plain).btn-default:focus, .btn:not(.btn-plain).btn-default:active, .btn:not(.btn-plain).btn-default.active {
+    .btn:not(.btn-plain):not(:disabled).btn-default:hover, .btn:not(.btn-plain):not(:disabled).btn-default:focus, .btn:not(.btn-plain):not(:disabled).btn-default:active, .btn:not(.btn-plain):not(:disabled).btn-default.active {
       color: white;
       background-color: #1f5c7a;
       border-color: #143d52; }
@@ -644,11 +674,6 @@ h5 {
   .btn .horizontal-items {
     position: relative;
     top: -0.2em; }
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  appearance: none;
-  margin: 0; }
 
 input[type="checkbox"] {
   position: relative;
@@ -690,6 +715,10 @@ input[type="checkbox"]:checked:after {
   width: 100%;
   padding: 0 1em;
   transition: border-color 0.5s; }
+  .form-control.form-control-minimal {
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0; }
 
 textarea.form-control {
   height: auto;
@@ -728,9 +757,9 @@ textarea.form-control {
     white-space: nowrap; }
     .input-group > .input-group-addon.expand {
       width: auto; }
-    .input-group > .input-group-addon.blend-in .btn {
+    .input-group > .input-group-addon.blend-in .btn:not(:disabled) {
       color: #737373; }
-      .input-group > .input-group-addon.blend-in .btn:hover {
+      .input-group > .input-group-addon.blend-in .btn:not(:disabled):hover {
         background-color: #f3f3f3; }
     .input-group > .input-group-addon:not(:first-child):not(:last-child) .btn {
       border-radius: 0;
@@ -754,13 +783,16 @@ hr {
 .hidden {
   display: none !important; }
 
-.clickable, nav .nav-items .nav-item {
+.clickable, .link, nav .nav-items .nav-item {
   cursor: pointer; }
 
-.no-select, .form-control:disabled, .input-group > .input-group-text-display:disabled, .input-group > .input-group-addon.blend-in .btn:disabled, .btn:disabled, .btn.btn-danger:disabled:not(.btn-plain), .btn.btn-success:disabled:not(.btn-plain), .btn.btn-default:disabled:not(.btn-plain), .disabled.form-control, .input-group > .disabled.input-group-text-display, .input-group > .input-group-addon.blend-in .disabled.btn, .disabled.btn, .disabled.btn.btn-danger:not(.btn-plain), .disabled.btn.btn-success:not(.btn-plain), .disabled.btn.btn-default:not(.btn-plain) {
+.link {
+  text-decoration: underline; }
+
+.no-select, .form-control:disabled, .input-group > .input-group-text-display:disabled, .input-group > .input-group-addon.blend-in .btn:disabled:not(:disabled), .btn:disabled, .btn.btn-danger:disabled:not(.btn-plain):not(:disabled), .btn.btn-success:disabled:not(.btn-plain):not(:disabled), .btn.btn-default:disabled:not(.btn-plain):not(:disabled), .disabled.form-control, .input-group > .disabled.input-group-text-display, .input-group > .input-group-addon.blend-in .disabled.btn:not(:disabled), .disabled.btn, .disabled.btn.btn-danger:not(.btn-plain):not(:disabled), .disabled.btn.btn-success:not(.btn-plain):not(:disabled), .disabled.btn.btn-default:not(.btn-plain):not(:disabled) {
   cursor: default;
   user-select: none; }
-  .no-select.clickable, .clickable.form-control:disabled, nav .nav-items .form-control.nav-item:disabled, .input-group > .clickable.input-group-text-display:disabled, nav .nav-items .input-group > .input-group-text-display.nav-item:disabled, .input-group > .input-group-addon.blend-in .clickable.btn:disabled, .clickable.btn:disabled, nav .nav-items .btn.nav-item:disabled, .clickable.disabled.form-control, nav .nav-items .disabled.form-control.nav-item, .input-group > .clickable.disabled.input-group-text-display, nav .nav-items .input-group > .disabled.input-group-text-display.nav-item, .input-group > .input-group-addon.blend-in .clickable.disabled.btn, .clickable.disabled.btn, nav .nav-items .disabled.btn.nav-item, nav .nav-items .no-select.nav-item {
+  .no-select.clickable, .clickable.form-control:disabled, .form-control.link:disabled, nav .nav-items .form-control.nav-item:disabled, .input-group > .clickable.input-group-text-display:disabled, .input-group > .input-group-text-display.link:disabled, nav .nav-items .input-group > .input-group-text-display.nav-item:disabled, .input-group > .input-group-addon.blend-in .clickable.btn:disabled:not(:disabled), .input-group > .input-group-addon.blend-in .btn.link:disabled:not(:disabled), .input-group > .input-group-addon.blend-in nav .nav-items .btn.nav-item:disabled:not(:disabled), nav .nav-items .input-group > .input-group-addon.blend-in .btn.nav-item:disabled:not(:disabled), .clickable.btn:disabled, .btn.link:disabled, nav .nav-items .btn.nav-item:disabled, .clickable.btn.btn-danger:disabled:not(.btn-plain):not(:disabled), .btn.btn-danger.link:disabled:not(.btn-plain):not(:disabled), .clickable.btn.btn-success:disabled:not(.btn-plain):not(:disabled), .btn.btn-success.link:disabled:not(.btn-plain):not(:disabled), .clickable.btn.btn-default:disabled:not(.btn-plain):not(:disabled), .btn.btn-default.link:disabled:not(.btn-plain):not(:disabled), .clickable.disabled.form-control, .disabled.form-control.link, nav .nav-items .disabled.form-control.nav-item, .input-group > .clickable.disabled.input-group-text-display, .input-group > .disabled.input-group-text-display.link, nav .nav-items .input-group > .disabled.input-group-text-display.nav-item, .input-group > .input-group-addon.blend-in .clickable.disabled.btn:not(:disabled), .input-group > .input-group-addon.blend-in .disabled.btn.link:not(:disabled), .input-group > .input-group-addon.blend-in nav .nav-items .disabled.btn.nav-item:not(:disabled), nav .nav-items .input-group > .input-group-addon.blend-in .disabled.btn.nav-item:not(:disabled), .clickable.disabled.btn, .disabled.btn.link, nav .nav-items .disabled.btn.nav-item, .clickable.disabled.btn.btn-danger:not(.btn-plain):not(:disabled), .disabled.btn.btn-danger.link:not(.btn-plain):not(:disabled), .clickable.disabled.btn.btn-success:not(.btn-plain):not(:disabled), .disabled.btn.btn-success.link:not(.btn-plain):not(:disabled), .clickable.disabled.btn.btn-default:not(.btn-plain):not(:disabled), .disabled.btn.btn-default.link:not(.btn-plain):not(:disabled), .no-select.link, nav .nav-items .no-select.nav-item {
     cursor: pointer; }
 
 .no-space {
@@ -812,6 +844,37 @@ hr {
 .margin-b-half,
 .margin-b-half.margin-b {
   margin-bottom: 0.5em; }
+
+.margin-all-quarter {
+  margin: 0.25em; }
+
+.margin-quarter.margin-l {
+  margin-left: 0.25em; }
+
+.margin-l-quarter,
+.margin-l-quarter.margin-l {
+  margin-left: 0.25em; }
+
+.margin-quarter.margin-r {
+  margin-right: 0.25em; }
+
+.margin-r-quarter,
+.margin-r-quarter.margin-r {
+  margin-right: 0.25em; }
+
+.margin-quarter.margin-t {
+  margin-top: 0.25em; }
+
+.margin-t-quarter,
+.margin-t-quarter.margin-t {
+  margin-top: 0.25em; }
+
+.margin-quarter.margin-b {
+  margin-bottom: 0.25em; }
+
+.margin-b-quarter,
+.margin-b-quarter.margin-b {
+  margin-bottom: 0.25em; }
 
 .margin-all-double {
   margin: 2em; }
@@ -875,6 +938,37 @@ hr {
 .margin-b-triple.margin-b {
   margin-bottom: 3em; }
 
+.margin-all-4x {
+  margin: 4em; }
+
+.margin-4x.margin-l {
+  margin-left: 4em; }
+
+.margin-l-4x,
+.margin-l-4x.margin-l {
+  margin-left: 4em; }
+
+.margin-4x.margin-r {
+  margin-right: 4em; }
+
+.margin-r-4x,
+.margin-r-4x.margin-r {
+  margin-right: 4em; }
+
+.margin-4x.margin-t {
+  margin-top: 4em; }
+
+.margin-t-4x,
+.margin-t-4x.margin-t {
+  margin-top: 4em; }
+
+.margin-4x.margin-b {
+  margin-bottom: 4em; }
+
+.margin-b-4x,
+.margin-b-4x.margin-b {
+  margin-bottom: 4em; }
+
 .pad-all {
   padding: 1em; }
 
@@ -920,6 +1014,37 @@ hr {
 .pad-b-half,
 .pad-b-half.pad-b {
   padding-bottom: 0.5em; }
+
+.pad-all-quarter {
+  padding: 0.25em; }
+
+.pad-quarter.pad-l {
+  padding-left: 0.25em; }
+
+.pad-l-quarter,
+.pad-l-quarter.pad-l {
+  padding-left: 0.25em; }
+
+.pad-quarter.pad-r {
+  padding-right: 0.25em; }
+
+.pad-r-quarter,
+.pad-r-quarter.pad-r {
+  padding-right: 0.25em; }
+
+.pad-quarter.pad-t {
+  padding-top: 0.25em; }
+
+.pad-t-quarter,
+.pad-t-quarter.pad-t {
+  padding-top: 0.25em; }
+
+.pad-quarter.pad-b {
+  padding-bottom: 0.25em; }
+
+.pad-b-quarter,
+.pad-b-quarter.pad-b {
+  padding-bottom: 0.25em; }
 
 .pad-all-double {
   padding: 2em; }
@@ -983,6 +1108,37 @@ hr {
 .pad-b-triple.pad-b {
   padding-bottom: 3em; }
 
+.pad-all-4x {
+  padding: 4em; }
+
+.pad-4x.pad-l {
+  padding-left: 4em; }
+
+.pad-l-4x,
+.pad-l-4x.pad-l {
+  padding-left: 4em; }
+
+.pad-4x.pad-r {
+  padding-right: 4em; }
+
+.pad-r-4x,
+.pad-r-4x.pad-r {
+  padding-right: 4em; }
+
+.pad-4x.pad-t {
+  padding-top: 4em; }
+
+.pad-t-4x,
+.pad-t-4x.pad-t {
+  padding-top: 4em; }
+
+.pad-4x.pad-b {
+  padding-bottom: 4em; }
+
+.pad-b-4x,
+.pad-b-4x.pad-b {
+  padding-bottom: 4em; }
+
 .border-all {
   border: 1px solid #d3d3d3; }
 
@@ -997,6 +1153,21 @@ hr {
 
 .border-b {
   border-bottom: 1px solid #d3d3d3; }
+
+.border-radius-all {
+  border-radius: 3px; }
+
+.border-radius-tl {
+  border-top-left-radius: 3px; }
+
+.border-radius-tr {
+  border-top-right-radius: 3px; }
+
+.border-radius-bl {
+  border-bottom-left-radius: 3px; }
+
+.border-radius-br {
+  border-bottom-right-radius: 3px; }
 
 .bg-color {
   background-color: #f3f3f3; }
@@ -1020,6 +1191,15 @@ hr {
   padding: 0;
   margin: 0; }
 
+.align-top {
+  vertical-align: top; }
+
+.align-middle {
+  vertical-align: middle; }
+
+.align-bottom {
+  vertical-align: bottom; }
+
 .margin-center {
   float: none !important;
   margin: 0 auto; }
@@ -1041,11 +1221,23 @@ hr {
   transform: translateY(-50%);
   right: 3%; }
 
+.pull-right-to-edge {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0; }
+
 .pull-left {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 3%; }
+
+.pull-left-to-edge {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0; }
 
 .center {
   position: absolute;
@@ -1102,13 +1294,15 @@ hr {
   width: 100%;
   position: relative; }
 
-.full-height {
+.full-height, nav .nav-items .nav-item a {
   height: 100%; }
 
 .xs-full-row {
+  box-sizing: border-box;
   width: 100%; }
 
 .xs-row-2 {
+  box-sizing: border-box;
   float: left;
   width: 50%; }
 
@@ -1116,6 +1310,7 @@ hr {
   margin-left: 50%; }
 
 .xs-row-3 {
+  box-sizing: border-box;
   float: left;
   width: 33.33333%; }
 
@@ -1126,10 +1321,12 @@ hr {
   margin-left: 66.66667%; }
 
 .xs-2-row-3 {
+  box-sizing: border-box;
   float: left;
   width: 66.66667%; }
 
 .xs-row-10 {
+  box-sizing: border-box;
   float: left;
   width: 10%; }
 
@@ -1161,38 +1358,47 @@ hr {
   margin-left: 90%; }
 
 .xs-2-row-10 {
+  box-sizing: border-box;
   float: left;
   width: 20%; }
 
 .xs-3-row-10 {
+  box-sizing: border-box;
   float: left;
   width: 30%; }
 
 .xs-4-row-10 {
+  box-sizing: border-box;
   float: left;
   width: 40%; }
 
 .xs-5-row-10 {
+  box-sizing: border-box;
   float: left;
   width: 50%; }
 
 .xs-6-row-10 {
+  box-sizing: border-box;
   float: left;
   width: 60%; }
 
 .xs-7-row-10 {
+  box-sizing: border-box;
   float: left;
   width: 70%; }
 
 .xs-8-row-10 {
+  box-sizing: border-box;
   float: left;
   width: 80%; }
 
 .xs-9-row-10 {
+  box-sizing: border-box;
   float: left;
   width: 90%; }
 
 .xs-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 5%; }
 
@@ -1254,74 +1460,92 @@ hr {
   margin-left: 95%; }
 
 .xs-2-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 10%; }
 
 .xs-3-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 15%; }
 
 .xs-4-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 20%; }
 
 .xs-5-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 25%; }
 
 .xs-6-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 30%; }
 
 .xs-7-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 35%; }
 
 .xs-8-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 40%; }
 
 .xs-9-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 45%; }
 
 .xs-10-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 50%; }
 
 .xs-11-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 55%; }
 
 .xs-12-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 60%; }
 
 .xs-13-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 65%; }
 
 .xs-14-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 70%; }
 
 .xs-15-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 75%; }
 
 .xs-16-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 80%; }
 
 .xs-17-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 85%; }
 
 .xs-18-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 90%; }
 
 .xs-19-row-20 {
+  box-sizing: border-box;
   float: left;
   width: 95%; }
 
@@ -1377,13 +1601,16 @@ li.display-xs {
 
 @media (min-width: 30em) {
   .s-full-row {
+    box-sizing: border-box;
     width: 100%; }
   .s-row-2 {
+    box-sizing: border-box;
     float: left;
     width: 50%; }
   .offset-s-row-2 {
     margin-left: 50%; }
   .s-row-3 {
+    box-sizing: border-box;
     float: left;
     width: 33.33333%; }
   .offset-s-row-3 {
@@ -1391,9 +1618,11 @@ li.display-xs {
   .offset-2-s-row-3 {
     margin-left: 66.66667%; }
   .s-2-row-3 {
+    box-sizing: border-box;
     float: left;
     width: 66.66667%; }
   .s-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 10%; }
   .offset-s-row-10 {
@@ -1415,30 +1644,39 @@ li.display-xs {
   .offset-9-s-row-10 {
     margin-left: 90%; }
   .s-2-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 20%; }
   .s-3-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 30%; }
   .s-4-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 40%; }
   .s-5-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 50%; }
   .s-6-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 60%; }
   .s-7-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 70%; }
   .s-8-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 80%; }
   .s-9-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 90%; }
   .s-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 5%; }
   .offset-s-row-20 {
@@ -1480,57 +1718,75 @@ li.display-xs {
   .offset-19-s-row-20 {
     margin-left: 95%; }
   .s-2-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 10%; }
   .s-3-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 15%; }
   .s-4-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 20%; }
   .s-5-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 25%; }
   .s-6-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 30%; }
   .s-7-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 35%; }
   .s-8-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 40%; }
   .s-9-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 45%; }
   .s-10-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 50%; }
   .s-11-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 55%; }
   .s-12-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 60%; }
   .s-13-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 65%; }
   .s-14-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 70%; }
   .s-15-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 75%; }
   .s-16-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 80%; }
   .s-17-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 85%; }
   .s-18-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 90%; }
   .s-19-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 95%; }
   .display-xs {
@@ -1574,13 +1830,16 @@ li.display-xs {
 
 @media (min-width: 46.25em) {
   .m-full-row {
+    box-sizing: border-box;
     width: 100%; }
   .m-row-2 {
+    box-sizing: border-box;
     float: left;
     width: 50%; }
   .offset-m-row-2 {
     margin-left: 50%; }
   .m-row-3 {
+    box-sizing: border-box;
     float: left;
     width: 33.33333%; }
   .offset-m-row-3 {
@@ -1588,9 +1847,11 @@ li.display-xs {
   .offset-2-m-row-3 {
     margin-left: 66.66667%; }
   .m-2-row-3 {
+    box-sizing: border-box;
     float: left;
     width: 66.66667%; }
   .m-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 10%; }
   .offset-m-row-10 {
@@ -1612,30 +1873,39 @@ li.display-xs {
   .offset-9-m-row-10 {
     margin-left: 90%; }
   .m-2-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 20%; }
   .m-3-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 30%; }
   .m-4-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 40%; }
   .m-5-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 50%; }
   .m-6-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 60%; }
   .m-7-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 70%; }
   .m-8-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 80%; }
   .m-9-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 90%; }
   .m-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 5%; }
   .offset-m-row-20 {
@@ -1677,57 +1947,75 @@ li.display-xs {
   .offset-19-m-row-20 {
     margin-left: 95%; }
   .m-2-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 10%; }
   .m-3-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 15%; }
   .m-4-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 20%; }
   .m-5-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 25%; }
   .m-6-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 30%; }
   .m-7-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 35%; }
   .m-8-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 40%; }
   .m-9-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 45%; }
   .m-10-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 50%; }
   .m-11-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 55%; }
   .m-12-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 60%; }
   .m-13-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 65%; }
   .m-14-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 70%; }
   .m-15-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 75%; }
   .m-16-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 80%; }
   .m-17-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 85%; }
   .m-18-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 90%; }
   .m-19-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 95%; }
   .display-xs {
@@ -1771,13 +2059,16 @@ li.display-xs {
 
 @media (min-width: 61.25em) {
   .l-full-row {
+    box-sizing: border-box;
     width: 100%; }
   .l-row-2 {
+    box-sizing: border-box;
     float: left;
     width: 50%; }
   .offset-l-row-2 {
     margin-left: 50%; }
   .l-row-3 {
+    box-sizing: border-box;
     float: left;
     width: 33.33333%; }
   .offset-l-row-3 {
@@ -1785,9 +2076,11 @@ li.display-xs {
   .offset-2-l-row-3 {
     margin-left: 66.66667%; }
   .l-2-row-3 {
+    box-sizing: border-box;
     float: left;
     width: 66.66667%; }
   .l-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 10%; }
   .offset-l-row-10 {
@@ -1809,30 +2102,39 @@ li.display-xs {
   .offset-9-l-row-10 {
     margin-left: 90%; }
   .l-2-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 20%; }
   .l-3-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 30%; }
   .l-4-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 40%; }
   .l-5-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 50%; }
   .l-6-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 60%; }
   .l-7-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 70%; }
   .l-8-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 80%; }
   .l-9-row-10 {
+    box-sizing: border-box;
     float: left;
     width: 90%; }
   .l-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 5%; }
   .offset-l-row-20 {
@@ -1874,57 +2176,75 @@ li.display-xs {
   .offset-19-l-row-20 {
     margin-left: 95%; }
   .l-2-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 10%; }
   .l-3-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 15%; }
   .l-4-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 20%; }
   .l-5-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 25%; }
   .l-6-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 30%; }
   .l-7-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 35%; }
   .l-8-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 40%; }
   .l-9-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 45%; }
   .l-10-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 50%; }
   .l-11-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 55%; }
   .l-12-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 60%; }
   .l-13-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 65%; }
   .l-14-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 70%; }
   .l-15-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 75%; }
   .l-16-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 80%; }
   .l-17-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 85%; }
   .l-18-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 90%; }
   .l-19-row-20 {
+    box-sizing: border-box;
     float: left;
     width: 95%; }
   .display-xs {
@@ -2135,6 +2455,7 @@ nav {
       font-weight: 700;
       padding: 1em; }
       nav .nav-items .nav-item a {
+        display: block;
         text-decoration: none; }
       nav .nav-items .nav-item:hover {
         background-color: #f3f3f3; }

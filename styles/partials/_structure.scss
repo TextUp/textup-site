@@ -31,6 +31,8 @@ nav {
             padding: $padding;
 
             a {
+                @extend .full-height;
+                display: block;
                 text-decoration: none;
             }
             &:hover {
