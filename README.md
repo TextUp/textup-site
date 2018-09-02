@@ -1,6 +1,6 @@
 # Textup Site
 
-The TextUp website
+[DEPRECATED] See the https://github.com/TextUp/textup.github.io for the consolidated TextUp site now served on GitHub Pages.
 
 ## Prerequisites
 
